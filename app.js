@@ -1,14 +1,16 @@
-const menuBar = document.querySelector(".menu-bar");
-const popUpBox = document.querySelector(".popup-box");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector("#nav-links");
+const closeIcon = document.querySelector("#close-icon");
 
-
-var nav = document.querySelector('.goon')
-document.querySelector('.fa-bars').onclick = function(){
-    nav.style.top = '0'
+// This is the function to toggle the visibility of the nav links
+function toggleNavLinks() {
+  // To check if navLinks is currently visible by checking its right style
+  if (navLinks.style.right === "0px" || navLinks.style.right === "0") {
+    navLinks.style.right = "-500px";
+  } else {
+    navLinks.style.right = "0";
+  }
 }
 
-document.querySelector('.fa-close').onclick = function(){
-    nav.style.top = '-500px'
-}
-
-
+menuToggle.addEventListener("click", toggleNavLinks);
+closeIcon.addEventListener("click", toggleNavLinks);

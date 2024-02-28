@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- font link -->
@@ -52,6 +52,17 @@
 
       .animate__animated.animate__backInDown {
         --animate-duration: 3s;
+      }
+
+      #nav-links {
+        position: fixed;
+        width: 100%;
+        height: 45%;
+        top: 0;
+        padding: 3.125rem;
+        right: -31.25rem;
+        transition: 0.5s;
+        z-index: 1000;
       }
     </style>
   </head>
@@ -87,20 +98,33 @@
 
         <!-- THE HAMBURGER DIV STARTS HERE... -->
         <div class="lg:hidden">
-          <span
-            class="material-symbols-outlined menu-bar text-3xl lg:hidden cursor-pointer"
-          >
-            menu
-
-            <div
-              class="popup-box text-[0.6rem] bg-[#372549] opacity-90 text-white fixed z-50 right-3 left-[13rem] px-8 font-bold hidden"
-            >
-              <p><a href="#">Home</a></p>
-              <p><a href="#">About Us</a></p>
-              <p><a href="#">Our Services</a></p>
-              <p><a href="#">Resources</a></p>
+          <div>
+            <div id="nav-links" class="bg-[#372549]">
+              <div id="nav-lists" class="text-white flex flex-col gap-3">
+                <p><a href="#">Home</a></p>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Our Services</a></p>
+                <p><a href="#">Resources</a></p>
+                <p class="border-2 w-[5rem] p-2 flex justify-center"><a href="#">Donate</a></p>
+              </div>
+              <span
+                class="material-symbols-outlined flex absolute top-[1.875rem] text-white right-[2.5rem] text-3xl"
+                id="close-icon"
+              >
+                close
+              </span>
             </div>
-          </span>
+
+            <div class="menu">
+              <span
+                class="menu-toggle material-symbols-outlined text-3xl lg:hidden cursor-pointer"
+              >
+                menu
+              </span>
+            </div>
+          </div>
+
+          <!-- POPUP BOX & CLOSE ICON HERE.... -->
         </div>
       </nav>
     </header>
