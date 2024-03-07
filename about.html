@@ -48,13 +48,16 @@
     </style>
   </head>
   <body>
-    <header class="m-2 md:mx-14 lg:mx-24 lg:my-10 relative">
+    <header class="m-4 lg:mx-24 lg:my-10 relative">
       <nav class="flex justify-between items-center">
-        <img src="./images/logo.png" class="h-[4.563rem] w-[15.438rem]" />
+        <img
+          src="./images/logo.png"
+          class="h-[3rem] lg:h-[4.563rem] lg:w-[15.438rem]"
+        />
 
         <ul class="hidden md:hidden lg:flex lg:gap-16 lg:text-xl">
           <li
-            class="hover:text-[#372549] hover:scale-125 hover:ease-out active:text-[#4B3B5B] hover:font-bold duration-300"
+            class="hover:text-[#372549] hover:scale-125 hover:ease-out active:text-[#4B3B5B] duration-300 hover:font-bold"
           >
             <a href="./index.html">Home</a>
           </li>
@@ -84,25 +87,51 @@
         <div class="lg:hidden">
           <div>
             <div id="nav-links" class="bg-[#372549]">
-              <div id="nav-lists" class="text-white flex flex-col gap-3">
+              <img src="./images/footer-logo.png" class="h-[2.6rem]" />
+              <div
+                id="nav-lists"
+                class="text-white text-[18px] flex flex-col gap-3 mt-[3rem]"
+              >
                 <p><a href="./index.html">Home</a></p>
                 <p><a href="./about.html">About Us</a></p>
                 <p><a href="./library.html">Our Library</a></p>
-                <p class="border-2 w-[5rem] p-2 flex justify-center">
+                <p>
                   <a href="./contactus.html">Contact Us</a>
                 </p>
               </div>
               <span
-                class="material-symbols-outlined flex absolute top-[1.875rem] text-white right-[2.5rem] text-3xl"
+                class="material-symbols-outlined flex absolute top-[1.3rem] text-white left-[15rem] text-3xl"
                 id="close-icon"
               >
                 close
               </span>
+
+              <!-- SOCIAL ICONS -->
+              <div
+                class="flex items-center gap-4 pt-[3rem]"
+              >
+                <a href="https://web.facebook.com/?_rdc=1&_rdr"
+                  ><img
+                    src="./images/fbk.png"
+                    class="h-10 cursor-pointer"
+                /></a>
+
+                <a href="https://www.instagram.com/moongoddessherself/"
+                  ><img
+                    src="./images/IG.png"
+                    class="h-10 border-black cursor-pointer"
+                /></a>
+                <a href="https://twitter.com/girle_45"
+                  ><img
+                    src="./images/Xapp.png"
+                    class="h-10 cursor-pointer"
+                /></a>
+              </div>
             </div>
 
             <div class="menu">
               <span
-                class="menu-toggle material-symbols-outlined text-3xl lg:hidden cursor-pointer"
+                class="menu-toggle material-symbols-outlined text-[1.5rem] text-[#372549] lg:hidden cursor-pointer"
               >
                 menu
               </span>
@@ -131,12 +160,6 @@
             Secure Her Abound is a ground breaking digital platform dedicated to
             Combat Sexual and Gender-Based Violence. It was founded in 2024 and
             it has provided avenue for victims of SGBV.
-          </p>
-          <p
-            class="text-center font-medium text-[0.8rem] mt-[0.5rem] leading-4 w-[19rem] tracking-wide mx-auto md:hidden lg:hidden"
-          >
-            Together we advocate for justice, empowerment and a world free from
-            violence and discrimination.
           </p>
           <button
             type="button"
@@ -516,39 +539,50 @@
 
     <!-- THIS IS THE FOOTER AREA -->
 
-    <footer class="bg-[#372549] px-3 py-7 mt-6 lg:mt-[7rem] lg:px-24 lg:py-10">
+    <footer class="bg-[#372549] px-4 py-7 mt-6 lg:mt-[7rem] lg:px-24 lg:py-10">
       <!-- UPPER DIV -->
       <div class="text-white lg:flex lg:justify-between">
         <div>
-          <img src="./images/footer-logo.png" class="h-[5rem] w-[17rem]" />
+          <img
+            src="./images/footer-logo.png"
+            class="h-[3rem] w-[10rem] lg:h-[5rem] lg:w-[17rem]"
+          />
 
           <p
-            class="cursor-default lg:text-[1.25rem] md:text-base lg:text-base italic tracking-widest lg:py-4"
+            class="cursor-default text-[12px] mt-3 lg:mt-0 lg:text-[1.25rem] md:text-base lg:text-base italic tracking-widest lg:py-4"
           >
             A home for the voiceless...
           </p>
 
-          <div
-            class="flex items-center gap-2 justify-center mt-2 lg:flex lg:gap-4 lg:justify-normal lg:my-4"
-          >
-            <img
-              src="./images/facebook-app-symbol.png"
-              class="h-5 p-1 lg:h-10 lg:p-2 lg:border-2 rounded-full border border-black cursor-pointer"
-            />
-            <img
-              src="./images/instagram (1).png"
-              class="h-5 p-1 lg:h-10 lg:p-2 lg:border-2 rounded-full border border-black cursor-pointer"
-            />
-            <img
-              src="./images/twitter (1).png"
-              class="h-5 p-1 lg:h-10 lg:p-2 lg:border-2 rounded-full border border-black cursor-pointer"
-            />
+          <div class="flex items-center gap-3 mt-2 lg:flex lg:gap-4 lg:my-4">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr"
+              ><img src="./images/fbk.png" class="h-8 lg:h-10 cursor-pointer"
+            /></a>
+
+            <a href="https://www.instagram.com/moongoddessherself/"
+              ><img
+                src="./images/IG.png"
+                class="h-8 lg:h-10 border-black cursor-pointer"
+            /></a>
+            <a href="https://twitter.com/girle_45"
+              ><img src="./images/Xapp.png" class="h-8 lg:h-10 cursor-pointer"
+            /></a>
           </div>
         </div>
 
+        <div class="lg:hidden mt-5">
+          <p class="text-[14px] text-white">Address:</p>
+          <p
+            class="lg:hidden cursor-default text-[#a9a8a8] text-[12px] w-[20rem] lg:w-[26rem] lg:text-base"
+          >
+            City of Refuge: No 14, Station Road, Along Royalton Hotel, GRA,
+            Ilorin, Kwara State.
+          </p>
+        </div>
+
         <div class="lg:flex lg:gap-20">
-          <div class="">
-            <h2 class="lg:text-[2rem] lg:pb-3">About</h2>
+          <div class="text-[14px]">
+            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] lg:pb-3">About</h2>
             <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
               Resources
             </p>
@@ -560,8 +594,8 @@
             </p>
           </div>
 
-          <div class="">
-            <h2 class="lg:text-[2rem] lg:pb-3">Contact</h2>
+          <div class="text-[14px]">
+            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] lg:pb-3">Contact</h2>
             <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
               +2349063174221
             </p>
@@ -573,8 +607,8 @@
             </p>
           </div>
 
-          <div class="">
-            <h2 class="lg:text-[2rem] lg:pb-3">Support</h2>
+          <div class="text-[14px]">
+            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] lg:pb-3">Support</h2>
             <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
               Help Center
             </p>
@@ -584,23 +618,23 @@
             </p>
           </div>
 
-          <div class="">
-            <h2 class="lg:text-[2rem] lg:pb-3">News</h2>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
-              Our Resources
-            </p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">Blogs</p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+          <div class="text-[14px] text-[#a9a8a8]">
+            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] text-white lg:pb-3">News</h2>
+            <p class="lg:text-[1.25rem] cursor-default">Vlogs</p>
+            <p class="lg:text-[1.25rem] cursor-default">Blogs</p>
+            <p class="lg:text-[1.25rem] cursor-default">
               Events
             </p>
           </div>
         </div>
+
+        
       </div>
 
       <!-- LOWER DIV -->
       <div class="lg:flex lg:items-center lg:justify-between">
-        <div class="lg:mt-4">
-          <p class="lg:text-[1.5rem] font-semibold text-white">Address:</p>
+        <div class="lg:mt-4 hidden lg:block">
+          <p class="lg:text-[1.5rem] lg:font-semibold text-white">Address:</p>
           <p
             class="cursor-default text-[#a9a8a8] text-[1.25rem] w-[20rem] lg:w-[26rem] lg:text-base"
           >
@@ -609,15 +643,15 @@
           </p>
         </div>
 
-        <form class="mt-1 lg:mt-3 relative">
+        <form class="mt-5 lg:mt-3 relative">
           <input
             type="email"
             placeholder="Email address"
-            class="w-[16rem] px-2 h-10 lg:w-[33.063rem] lg:h-[6.25rem] rounded-[6.25rem] lg:text-[1.25rem] lg:px-10 outline-none text-black"
+            class="w-full px-7 h-[3.5rem] lg:w-[33.063rem] lg:h-[6.25rem] rounded-[6.25rem] lg:text-[1.25rem] lg:px-10 outline-none text-black"
           />
           <button
             type="submit"
-            class="bg-[#372549] absolute right-2 top-1 text-white cursor-pointer h-11 px-2 rounded-[6.25rem] lg:text-[1.25rem] lg:h-[5.625rem] lg:w-[12.063rem]"
+            class="bg-[#372549] right-1 top-[0.15rem] text-[1rem] absolute text-white cursor-pointer h-[3.2rem] w-[6rem] px-2 rounded-[6.25rem] lg:text-[1.25rem] lg:h-[5.625rem] lg:right-2 lg:top-1 lg:w-[12.063rem]"
           >
             Sign up
           </button>
@@ -627,7 +661,7 @@
 
     <!-- COPYRIGHT DIV -->
     <div
-      class="text-[0.7rem] lg:text-[0.9rem] py-2 text-black text-center lg:text-left"
+      class="text-[0.6rem] py-1 lg:text-[0.9rem] lg:py-2 text-black text-center lg:text-left"
     >
       <p class="text-center">© 2024 Secure Her Abound. All-Rights Reserved.</p>
     </div>
