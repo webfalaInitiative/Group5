@@ -33,12 +33,13 @@
 
       #nav-links {
         position: fixed;
-        width: 100%;
-        height: 45%;
+        width: 81.5%;
+        height: 58%;
         top: 0;
-        padding: 3.125rem;
+        overflow: hidden;
+        padding: 0.85rem 1rem;
         right: -31.25rem;
-        transition: 0.5s;
+        transition: 1s;
         z-index: 1000;
       }
     </style>
@@ -103,13 +104,9 @@
               </span>
 
               <!-- SOCIAL ICONS -->
-              <div
-                class="flex items-center gap-4 pt-[3rem]"
-              >
+              <div class="flex items-center gap-4 pt-[3rem]">
                 <a href="https://web.facebook.com/?_rdc=1&_rdr"
-                  ><img
-                    src="./images/fbk.png"
-                    class="h-10 cursor-pointer"
+                  ><img src="./images/fbk.png" class="h-10 cursor-pointer"
                 /></a>
 
                 <a href="https://www.instagram.com/moongoddessherself/"
@@ -118,9 +115,7 @@
                     class="h-10 border-black cursor-pointer"
                 /></a>
                 <a href="https://twitter.com/girle_45"
-                  ><img
-                    src="./images/Xapp.png"
-                    class="h-10 cursor-pointer"
+                  ><img src="./images/Xapp.png" class="h-10 cursor-pointer"
                 /></a>
               </div>
             </div>
@@ -140,23 +135,23 @@
     <main>
       <!-- SECTION 1 -->
       <section
-        class="mx-2 lg:mt-[7rem] lg:mx-24 lg:flex lg:justify-between lg:items-center"
+        class="mx-4 mt-[2.5rem] lg:mt-[7rem] lg:mx-24 lg:flex lg:justify-between lg:items-center"
       >
         <div>
           <h1
-            class="lg:text-[4rem] lg:w-[45rem] lg:leading-[4.7rem] font-bold"
+            class="w-full text-[1.4rem] text-center leading-[27px] lg:text-[4rem] lg:text-left lg:w-[45rem] lg:leading-[4.7rem] font-bold"
           >
-            Discover our Collections of Digital Resources.
+            Discover our Collections of Digital Resources
           </h1>
           <p
-            class="lg:w-[48rem] lg:text-[1.25rem] lg:mt-2 text-[#808080] lg:leading-[1.5rem]"
+            class="text-[14px] text-center mt-[0.4rem] leading-[18px] w-[21rem] lg:w-[48rem] lg:text-left lg:text-[1.25rem] lg:mt-2 text-[#808080] lg:leading-[1.5rem]"
           >
             Search, Save and Share Stories, Watch Videos, Explore Magazines,
             Listen to Music from Thousands of our Collections...
           </p>
         </div>
         <div
-          class="rounded-[1.25rem] w-full h-[20rem] lg:w-[50rem] lg:h-[40rem]"
+          class="rounded-[1.25rem] mt-[2.5rem] w-full h-[20rem] lg:w-[50rem] lg:h-[40rem]"
           style="
             background: url(./images/library.jpeg) center center/cover no-repeat;
           "
@@ -165,15 +160,15 @@
 
       <!-- SECTION 2 - CARDS -->
 
-      <section class="lg:mt-[7rem]">
+      <section class="mx-4 mt-[2.5rem] lg:mt-[7rem]">
         <h1
-          class="lg:mx-24 font-bold text-xl mb-[0.2rem] md:text-3xl md:mb-[0.7rem] lg:text-[3rem] lg:mb-[0.9rem] text-center"
+          class="lg:mx-24 font-bold text-[1.3rem] md:text-3xl md:mb-[0.7rem] lg:text-[3rem] lg:mb-[0.9rem] text-center"
         >
           Explore Our Collections
         </h1>
         <!-- UPPER CARDS -->
         <div
-          class="mx-2 mb-4 lg:mb-[0rem] mt-[1.5rem] md:mt-[2rem] md:mx-14 lg:mt-[3rem] lg:mx-24 lg:flex lg:gap-7"
+          class="mb-4 lg:mb-[0rem] mt-[1.5rem] md:mt-[2rem] md:mx-14 lg:mt-[3rem] lg:mx-24 lg:flex lg:gap-7"
         >
           <!-- CARD1 -->
           <div
@@ -191,7 +186,7 @@
             <h1
               class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
             >
-              Black Lives Matter
+              <a href="https://blacklivesmatter.com/">Black Lives Matter</a>
             </h1>
             <p class="text-center text-[#9a9999]">
               An Afro-American Collection
@@ -214,9 +209,9 @@
             <h1
               class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
             >
-              Secure Her Abound Celebration of International Women's Day
+              <a href="https://blacklivesmatter.com/">Black Lives Matter</a>
             </h1>
-            <p class="text-center text-[#9a9999]">
+            <p class="text-center text-[14px] text-[#9a9999]">
               An Afro-American Collection
             </p>
           </div>
@@ -239,7 +234,9 @@
             >
               No More Slavery
             </h1>
-            <p class="text-center text-[#9a9999]">A book by John Andrew</p>
+            <p class="text-center text-[14px] lg:text-[16px] text-[#9a9999]">
+              A book by John Andrew
+            </p>
           </div>
 
           <!-- CARD 3 -->
@@ -281,14 +278,14 @@
             >
               Stop Violence Against Women
             </h1>
-            <p class="text-center text-[#9a9999]">A John Sarah Collection</p>
+            <p class="text-center text-[14px] text-[#9a9999]">
+              A John Sarah Collection
+            </p>
           </div>
         </div>
 
         <!-- LOWER CARDS -->
-        <div
-          class="mx-2 md:mt-[2rem] md:mx-14 lg:mt-[1rem] lg:mx-24 lg:flex lg:gap-6"
-        >
+        <div class="lg:mt-[1rem] lg:mx-24 lg:flex lg:gap-6">
           <!-- CARD4 -->
           <div
             class="hidden lg:block md:hidden mb-2 lg:mb-0 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
@@ -308,7 +305,7 @@
               Fight Against Depression
             </h1>
             <p class="text-center text-[#9a9999]">
-              A Journal from the American Black Community
+              <a href="#">A Journal from the American Black Community</a>
             </p>
           </div>
 
@@ -330,7 +327,7 @@
             >
               Fight Against Depression
             </h1>
-            <p class="text-center text-[#9a9999]">
+            <p class="text-center text-[14px] text-[#9a9999]">
               A Journal from the American Black Community
             </p>
           </div>
@@ -353,7 +350,9 @@
             >
               Magazine
             </h1>
-            <p class="text-center text-[#9a9999]">All About Girl Power</p>
+            <p class="text-center text-[14px] lg:text-[16px] text-[#9a9999]">
+              All About Girl Power
+            </p>
           </div>
 
           <!-- CARD 6 -->
@@ -396,7 +395,9 @@
             >
               Win-Win Strategy
             </h1>
-            <p class="text-center text-[#9a9999]">A book by Frank Lafley</p>
+            <p class="text-center text-[14px] text-[#9a9999]">
+              A book by Frank Lafley
+            </p>
           </div>
         </div>
       </section>
@@ -404,17 +405,33 @@
       <!-- NEED HELP SECTION -->
 
       <section
-        class="mx-2 lg:mt-[7rem] lg:mx-24 lg:flex lg:justify-between lg:items-center"
+        class="mx-4 mt-[2.5rem] lg:mt-[7rem] lg:mx-24 lg:flex lg:justify-between lg:items-center"
       >
         <div>
-          <h1 class="lg:text-[4rem] lg:w-[45rem] lg:leading-[4.7rem] font-bold">
+          <h1
+            class="hidden lg:block lg:text-[4rem] lg:w-[45rem] lg:leading-[4.7rem] font-bold"
+          >
             Need to talk?
           </h1>
-          <h1 class="lg:text-[4rem] lg:w-[45rem] lg:leading-[4.7rem] font-bold">
+          <h1
+            class="hidden lg:block lg:text-[4rem] lg:w-[45rem] lg:leading-[4.7rem] font-bold"
+          >
             We’re here for you
           </h1>
+          <h1
+            class="lg:hidden text-[1.3rem] text-center lg:text-left lg:text-[4rem] lg:w-[45rem] lg:leading-[4.7rem] font-bold"
+          >
+            <span class="text-[1.5rem]">Need to Talk?</span> We’re here for you
+          </h1>
+          <div
+            class="lg:hidden rounded-[1.25rem] mt-[2.5rem] w-full h-[20rem]"
+            style="
+              background: url(./images/point-left.jpg) center center/cover
+                no-repeat;
+            "
+          ></div>
           <p
-            class="lg:w-[48rem] lg:text-[1.25rem] lg:mt-2 text-[#808080] lg:leading-[1.5rem]"
+            class="text-[1rem] mt-[1rem] leading-[20px] lg:w-[48rem] lg:text-[1.25rem] lg:mt-2 text-[#808080] lg:leading-[1.5rem]"
           >
             Whether you are looking for support, advice, seeking justice,
             information, empowerment, referral, self-care tools, advice our
@@ -422,7 +439,7 @@
           </p>
         </div>
         <div
-          class="rounded-[1.25rem] w-full h-[20rem] lg:w-[50rem] lg:h-[40rem]"
+          class="hidden lg:block rounded-[1.25rem] lg:w-[50rem] lg:h-[40rem]"
           style="
             background: url(./images/point-left.jpg) center center/cover
               no-repeat;
@@ -435,7 +452,7 @@
       <section>
         <!-- UPPER CARDS -->
         <div
-          class="mx-2 mb-4 lg:mb-[0rem] mt-[1.5rem] md:mt-[2rem] md:mx-14 lg:mt-[7rem] lg:mx-24 lg:flex lg:gap-7"
+          class="mx-4 mt-[2.5rem] mb-4 lg:mb-[0rem] md:mt-[2rem] md:mx-14 lg:mt-[7rem] lg:mx-24 lg:flex lg:gap-7"
         >
           <!-- CARD1 -->
           <div
@@ -459,7 +476,7 @@
 
           <!-- CARD1 MOBILE lg:h- changed from 25rem to 23rem... reduce for mobile too-->
           <div
-            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[16rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
@@ -471,7 +488,7 @@
               "
             ></div>
             <h1
-              class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+              class="text-center font-bold mt-[0.7rem] lg:w-full mx-auto lg:text-[1.5rem]"
             >
               Hotline and Help Services
             </h1>
@@ -479,7 +496,7 @@
 
           <!-- CARD2 -->
           <div
-            class="mb-4 lg:mb-5 rounded-t-[1.3rem] h-[18rem] w-full md:hidden lg:block md:h-[18rem] md:w-[19.5rem] lg:h-[23rem] lg:w-[36rem] bg-[#f2f2f2]"
+            class="mb-4 lg:mb-5 rounded-t-[1.3rem] h-[16rem] w-full md:hidden lg:block md:h-[18rem] md:w-[19.5rem] lg:h-[23rem] lg:w-[36rem] bg-[#f2f2f2]"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
@@ -491,7 +508,7 @@
               "
             ></div>
             <h1
-              class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+              class="text-center font-bold mt-[0.7rem] lg:mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
             >
               Online Resource Directory
             </h1>
@@ -519,7 +536,7 @@
 
           <!-- CARD 3 MOBILE-->
           <div
-            class="md:hidden lg:hidden mb-4 lg:mb-5 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+            class="md:hidden lg:hidden mb-4 lg:mb-5 rounded-t-[1.3rem] h-[16rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
@@ -531,7 +548,7 @@
               "
             ></div>
             <h1
-              class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+              class="text-center w-[18rem] mx-auto font-bold mt-[0.7rem] lg:mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
             >
               Legal Advisory Services
             </h1>
@@ -564,7 +581,7 @@
 
           <!-- CARD4 MOBILE-->
           <div
-            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[23rem] lg:w-[36rem] bg-[#f2f2f2]"
+            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[16rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[23rem] lg:w-[36rem] bg-[#f2f2f2]"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
@@ -576,7 +593,7 @@
               "
             ></div>
             <h1
-              class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+              class="text-center font-bold mt-[0.7rem] lg:mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
             >
               Counselling and Therapy Session
             </h1>
@@ -584,7 +601,7 @@
 
           <!-- CARD5 -->
           <div
-            class="mb-4 lg:block lg:mb-0 rounded-t-[1.3rem] h-[18rem] w-full md:hidden md:h-[18rem] md:w-[19.5rem] lg:h-[23rem] lg:w-[36rem] bg-[#f2f2f2]"
+            class="mb-4 lg:block lg:mb-0 rounded-t-[1.3rem] h-[16rem] w-full md:hidden md:h-[18rem] md:w-[19.5rem] lg:h-[23rem] lg:w-[36rem] bg-[#f2f2f2]"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
@@ -596,7 +613,7 @@
               "
             ></div>
             <h1
-              class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+              class="text-center font-bold mt-[0.7rem] lg:mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
             >
               Community and Peer Group Support
             </h1>
@@ -604,7 +621,7 @@
 
           <!-- CARD 6 -->
           <div
-            class="hidden lg:block md:hidden mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[23rem] lg:w-[36rem] bg-[#f2f2f2]"
+            class="hidden lg:block md:hidden mb-2 rounded-t-[1.3rem] h-[16rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[23rem] lg:w-[36rem] bg-[#f2f2f2]"
             data-aos="flip-right"
             data-aos-duration="3000"
           >
@@ -624,7 +641,7 @@
 
           <!-- CARD 6 MOBILE-->
           <div
-            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[23rem] lg:w-[36rem] bg-[#f2f2f2]"
+            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[16rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[23rem] lg:w-[36rem] bg-[#f2f2f2]"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
@@ -636,7 +653,7 @@
               "
             ></div>
             <h1
-              class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+              class="text-center w-[18rem] mx-auto font-bold mt-[0.7rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
             >
               Women Empowerment and Training
             </h1>
@@ -646,15 +663,15 @@
 
       <!--NEWS AND BLOGS - CARDS 📰🗞️ -->
 
-      <section class="lg:mt-[7rem]">
+      <section class="mx-4 mt-[2.5rem] lg:mt-[7rem]">
         <h1
-          class="lg:mx-24 font-bold text-xl mb-[0.2rem] md:text-3xl md:mb-[0.7rem] lg:text-[3rem] lg:mb-[0.9rem] text-center"
+          class="lg:mx-24 font-bold text-[1.3rem] md:text-3xl md:mb-[0.7rem] lg:text-[3rem] lg:mb-[0.9rem] text-center"
         >
           News and Blogs
         </h1>
         <!-- UPPER CARDS -->
         <div
-          class="mx-2 mb-4 lg:mb-[0rem] mt-[1.5rem] md:mt-[2rem] md:mx-14 lg:mt-[3rem] lg:mx-24 lg:flex lg:gap-7"
+          class="mb-4 mt-[2.5rem] lg:mb-[0rem] lg:mt-[3rem] lg:mx-24 lg:flex lg:gap-7"
         >
           <!-- CARD1 -->
           <div
@@ -682,7 +699,7 @@
 
           <!-- CARD1 MOBILE -->
           <div
-            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
+            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[16rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
             style="box-shadow: 0 40px 60px rgba(32, 33, 36, 0.1)"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
@@ -696,17 +713,17 @@
             ></video>
             <div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.7rem]"
+                class="text-center font-bold mt-[0.7rem] lg:w-full mx-auto lg:text-[1.7rem]"
               >
                 Blog Post
               </h1>
-              <p class="text-center">Physical Abuse Story</p>
+              <p class="text-center text-[14px]">Physical Abuse Story</p>
             </div>
           </div>
 
           <!-- CARD2 -->
           <div
-            class="mb-4 lg:mb-5 rounded-t-[1.3rem] h-[18rem] w-full md:hidden lg:block md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
+            class="mb-4 lg:mb-5 rounded-t-[1.3rem] h-[17rem] w-full md:hidden lg:block md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
             style="box-shadow: 0 40px 60px rgba(32, 33, 36, 0.1)"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
@@ -720,11 +737,11 @@
             ></div>
             <div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.7rem]"
+                class="text-center font-bold mt-[0.45rem] lg:mt-[1rem] lg:w-full mx-auto lg:text-[1.7rem]"
               >
                 Newspaper
               </h1>
-              <p class="text-center">Child Sexual Abuse Survivor Story</p>
+              <p class="text-center text-[14px] lg:text-[16px]">Child Sexual Abuse Survivor Story</p>
             </div>
           </div>
 
@@ -754,7 +771,7 @@
 
           <!-- CARD 3 MOBILE-->
           <div
-            class="md:hidden lg:hidden mb-4 lg:mb-5 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
+            class="md:hidden lg:hidden mb-4 lg:mb-5 rounded-t-[1.3rem] h-[17rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
             style="box-shadow: 0 40px 60px rgba(32, 33, 36, 0.1)"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
@@ -767,11 +784,11 @@
             ></div>
             <div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.7rem]"
+                class="text-center font-bold mt-[0.5rem] lg:w-full mx-auto lg:text-[1.7rem]"
               >
                 Magazine
               </h1>
-              <p class="text-center">Sexual and Gender-Based Violence</p>
+              <p class="text-center text-[14px]">Sexual and Gender-Based Violence</p>
             </div>
           </div>
         </div>
@@ -806,7 +823,7 @@
 
           <!-- CARD4 MOBILE-->
           <div
-            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
+            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[17rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
             style="box-shadow: 0 40px 60px rgba(32, 33, 36, 0.1)"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
@@ -820,17 +837,17 @@
             ></div>
             <div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.7rem]"
+                class="text-center font-bold mt-[0.5rem] lg:w-full mx-auto lg:text-[1.7rem]"
               >
                 Magazine
               </h1>
-              <p class="text-center">Success Stories of Women</p>
+              <p class="text-center text-[14px]">Success Stories of Women</p>
             </div>
           </div>
 
           <!-- CARD5 -->
           <div
-            class="mb-4 lg:block lg:mb-0 rounded-t-[1.3rem] h-[18rem] w-full md:hidden md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
+            class="mb-4 lg:block lg:mb-0 rounded-t-[1.3rem] h-[16rem] w-full md:hidden md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
             style="box-shadow: 0 40px 60px rgba(32, 33, 36, 0.1)"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
@@ -844,11 +861,11 @@
             ></video>
             <div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.7rem]"
+                class="text-center font-bold mt-[1rem] lg:mt-[1rem] lg:w-full mx-auto lg:text-[1.7rem]"
               >
                 Vlog Post
               </h1>
-              <p class="text-center">
+              <p class="text-center text-[14px] lg:text-[16px]">
                 Victim: The Night I Was Sexually Assulted
               </p>
             </div>
@@ -880,7 +897,7 @@
 
           <!-- CARD 6 MOBILE-->
           <div
-            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
+            class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[17rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#ffffff]"
             style="box-shadow: 0 40px 60px rgba(32, 33, 36, 0.1)"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
@@ -893,10 +910,11 @@
               "
             ></div>
             <h1
-              class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+              class="text-center w-[18rem] mx-auto font-bold mt-[0.5rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
             >
-              No! To Early Marriage and Female Trafficking
+            Events
             </h1>
+            <p class="text-center text-[14px]">Advocacy and Awareness</p>
           </div>
         </div>
       </section>
@@ -987,13 +1005,9 @@
             <h2 class="mt-3 lg:mt-0 lg:text-[2rem] text-white lg:pb-3">News</h2>
             <p class="lg:text-[1.25rem] cursor-default">Vlogs</p>
             <p class="lg:text-[1.25rem] cursor-default">Blogs</p>
-            <p class="lg:text-[1.25rem] cursor-default">
-              Events
-            </p>
+            <p class="lg:text-[1.25rem] cursor-default">Events</p>
           </div>
         </div>
-
-        
       </div>
 
       <!-- LOWER DIV -->
@@ -1035,5 +1049,7 @@
     <script>
       AOS.init();
     </script>
+
+    <script type="module" src="app.js"></script>
   </body>
 </html>
