@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .animate__animated.animate__backInDown {
+        --animate-duration: 1s;
+      }
+
+      .animate__bounceIn.animate__animated {
+        --animate-duration: 2s;
+      }
+
+      #nav-links {
+        position: fixed;
+        width: 100%;
+        height: 45%;
+        top: 0;
+        padding: 3.125rem;
+        right: -31.25rem;
+        transition: 0.5s;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="m-2 md:mx-14 lg:mx-24 lg:my-10 relative">
+      <nav class="flex justify-between items-center">
+        <img src="./images/logo.png" class="h-[4.563rem] w-[15.438rem]" />
+
+        <ul class="hidden md:hidden lg:flex lg:gap-16 lg:text-xl">
+          <li
+            class="hover:text-[#372549] hover:scale-125 hover:ease-out active:text-[#4B3B5B] hover:font-bold duration-300"
+          >
+            <a href="./index.html">Home</a>
+          </li>
+          <li
+            class="hover:text-[#372549] hover:scale-125 hover:ease-out active:text-[#4B3B5B] hover:font-bold duration-300"
+          >
+            <a href="./about.html">About Us</a>
+          </li>
+          <li
+            class="hover:text-[#372549] hover:scale-125 hover:ease-out active:text-[#4B3B5B] hover:font-bold duration-300"
+          >
+            <a href="./library.html">Our Library</a>
+          </li>
+          <li class="lg:hidden">
+            <button><a href="./support.html">Donate</a></button>
+          </li>
+        </ul>
+
+        <button
+          type="button"
+          class="hidden md:hidden lg:block lg:text-xl lg:px-8 lg:rounded-full lg:text-white lg:h-[5.625rem] lg:w-[16.188rem] active:bg-[#3f2a54] bg-[#372549] hover:bg-[#5c4a6f] lg:duration-300"
+        >
+          <a href="./contactus.html">Contact Us</a>
+        </button>
+
+        <!-- THE HAMBURGER DIV STARTS HERE... -->
+        <div class="lg:hidden">
+          <div>
+            <div id="nav-links" class="bg-[#372549]">
+              <div id="nav-lists" class="text-white flex flex-col gap-3">
+                <p><a href="./index.html">Home</a></p>
+                <p><a href="./about.html">About Us</a></p>
+                <p><a href="./library.html">Our Library</a></p>
+                <p class="border-2 w-[5rem] p-2 flex justify-center">
+                  <a href="./contactus.html">Contact Us</a>
+                </p>
+              </div>
+              <span
+                class="material-symbols-outlined flex absolute top-[1.875rem] text-white right-[2.5rem] text-3xl"
+                id="close-icon"
+              >
+                close
+              </span>
+            </div>
+
+            <div class="menu">
+              <span
+                class="menu-toggle material-symbols-outlined text-3xl lg:hidden cursor-pointer"
+              >
+                menu
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="mx-5 lg:mt-[7rem] lg:mx-24 lg:flex lg:justify-between lg:items-center"
+      >
+        <div>
+          <h1
+            class="lg:text-[4rem] lg:w-[45rem] lg:leading-[4.7rem] font-bold animate__animated animate__backInDown"
+          >
+            About
+          </h1>
+          <h1 class="lg:text-[4rem] lg:w-[45rem] lg:leading-[4.7rem] font-bold">
+            Secure Her Abound
+          </h1>
+          <p
+            class="lg:w-[54rem] lg:text-[24px] lg:mt-5 text-[#808080] lg:leading-[1.8rem]"
+          >
+            Secure Her Abound is a ground breaking digital platform dedicated to
+            Combat Sexual and Gender-Based Violence. It was founded in 2024 and
+            it has provided avenue for victims of SGBV.
+          </p>
+          <p
+            class="text-center font-medium text-[0.8rem] mt-[0.5rem] leading-4 w-[19rem] tracking-wide mx-auto md:hidden lg:hidden"
+          >
+            Together we advocate for justice, empowerment and a world free from
+            violence and discrimination.
+          </p>
+          <button
+            type="button"
+            class="hidden md:hidden lg:mt-7 lg:block lg:text-xl lg:px-8 lg:rounded-full lg:text-white lg:h-[5.625rem] lg:w-[16.188rem] bg-[#372549] active:bg-[#3f2a54] hover:bg-[#5c4a6f] lg:duration-300"
+          >
+            <a href="./contactus.html">Contact Us</a>
+          </button>
+        </div>
+        <div>
+          <img
+            src="./images/front-view-friends-hands.jpg"
+            class="lg:w-[50rem] lg:h-[40rem] rounded-[20px]"
+          />
+        </div>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section class="mx-5 lg:mt-[7rem] lg:mx-24">
+        <div>
+          <h1
+            class="text-center lg:text-[2.5rem] lg:leading-[4.7rem] lg:mb-5 font-bold animate__bounceIn animate__animated animate__delay-2s"
+          >
+            Our Mission
+          </h1>
+          <p class="text-center text-[1.6rem] text-[#808080]">
+            Our online community fosters safety and inclusivity, offering
+            resources and advocacy while fostering solidarity among members.
+          </p>
+        </div>
+        <div>
+          <h1
+            class="text-center lg:text-[2.5rem] lg:mt-[7rem] lg:mb-5 lg:leading-[4.7rem] font-bold animate__bounceIn animate__animated animate__delay-2s"
+          >
+            Our Vision
+          </h1>
+          <p class="text-center text-[1.6rem] text-[#808080]">
+            We strive for a world where everyone, regardless of their gender
+            feels safe and empowered. We want to create inclusive environments
+            where individuals thrive with confidence and security.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 3 -->
+      <section class="mx-5 lg:mt-[7rem] lg:mx-24">
+        <h1
+          class="text-center lg:text-[2.5rem] lg:leading-[4.7rem] lg:mb-5 font-bold"
+        >
+          Meet The Team
+        </h1>
+
+        <!-- CARDS SECTION -->
+
+        <div>
+          <!-- UPPER CARDS -->
+          <div
+            class="mx-2 mb-4 lg:mb-[0rem] mt-[1.5rem] md:mt-[2rem] md:mx-14 lg:mt-[3rem] lg:mx-24 lg:flex lg:gap-7"
+          >
+            <!-- CARD1 -->
+            <div
+              class="hidden md:hidden lg:block mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              data-aos="flip-left"
+              data-aos-duration="3000"
+            >
+              <div
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                style="
+                  background: url(./images/t1.jpg) center center/cover no-repeat;
+                "
+              ></div>
+              <h1
+                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+              >
+                Lawal Rukayat
+              </h1>
+              <p
+                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+              >
+                Development Manager
+              </p>
+            </div>
+
+            <!-- CARD1 MOBILE -->
+            <div
+              class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              data-aos="zoom-in-up"
+              data-aos-duration="3000"
+            >
+              <div
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                style="
+                  background: url(./images/t1.jpg) center center/cover no-repeat;
+                "
+              ></div>
+              <h1
+                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+              >
+                Lawal Rukayat
+              </h1>
+              <p
+                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+              >
+                Development Manager
+              </p>
+            </div>
+
+            <!-- CARD2 -->
+            <div
+              class="mb-4 lg:mb-5 rounded-t-[1.3rem] h-[18rem] w-full md:hidden lg:block md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              data-aos="zoom-in-up"
+              data-aos-duration="3000"
+            >
+              <div
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                style="
+                  background: url(./images/t2.jpg) center center/cover no-repeat;
+                "
+              ></div>
+              <h1
+                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+              >
+                Cynthia Okafor
+              </h1>
+              <p
+                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+              >
+                Programs Manager
+              </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div
+              class="hidden lg:block md:hidden mb-2 lg:mb-5 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              data-aos="flip-right"
+              data-aos-duration="3000"
+            >
+              <div
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                style="
+                  background: url(./images/t3.jpeg) center center/cover
+                    no-repeat;
+                "
+              ></div>
+              <h1
+                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+              >
+                Aminat Agboola
+              </h1>
+              <p
+                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+              >
+                Collection Manager
+              </p>
+            </div>
+
+            <!-- CARD 3 MOBILE-->
+            <div
+              class="md:hidden lg:hidden mb-4 lg:mb-5 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              data-aos="zoom-in-up"
+              data-aos-duration="3000"
+            >
+              <div
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                style="
+                  background: url(./images/t3.jpeg) center center/cover
+                    no-repeat;
+                "
+              ></div>
+              <h1
+                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+              >
+                Aminat Agboola
+              </h1>
+              <p
+                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+              >
+                Collection Manager
+              </p>
+            </div>
+          </div>
+
+          <!-- LOWER CARDS -->
+          <div
+            class="mx-2 md:mt-[2rem] md:mx-14 lg:mt-[1rem] lg:mx-24 lg:flex lg:gap-6"
+          >
+            <!-- CARD4 -->
+            <div
+              class="hidden lg:block md:hidden mb-2 lg:mb-0 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              data-aos="flip-left"
+              data-aos-duration="3000"
+            >
+              <div
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                style="
+                  background: url(./images/t4.png) center center/cover no-repeat;
+                "
+              ></div>
+              <h1
+                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+              >
+                Hamzat Roheemah
+              </h1>
+              <p
+                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+              >
+                Communications Lead
+              </p>
+            </div>
+
+            <!-- CARD4 MOBILE-->
+            <div
+              class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              data-aos="zoom-in-up"
+              data-aos-duration="3000"
+            >
+              <div
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                style="
+                  background: url(./images/t4.png) center center/cover no-repeat;
+                "
+              ></div>
+              <h1
+                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+              >
+                Hamzat Roheemah
+              </h1>
+              <p
+                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+              >
+                Communications Lead
+              </p>
+            </div>
+
+            <!-- CARD5 -->
+            <div
+              class="mb-4 lg:block lg:mb-0 rounded-t-[1.3rem] h-[18rem] w-full md:hidden md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              data-aos="zoom-in-up"
+              data-aos-duration="3000"
+            >
+              <div
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                style="
+                  background: url(./images/t55.jpg) center center/cover
+                    no-repeat;
+                "
+              ></div>
+              <h1
+                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+              >
+                Zulu Rodiat
+              </h1>
+              <p
+                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+              >
+                Lead For Basic Digital Skill
+              </p>
+            </div>
+
+            <!-- CARD 6 -->
+            <div
+              class="hidden lg:block md:hidden mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              data-aos="flip-right"
+              data-aos-duration="3000"
+            >
+              <div
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                style="
+                  background: url(./images/t66.jpg) center center/cover
+                    no-repeat;
+                "
+              ></div>
+              <h1
+                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+              >
+                Sulaiman Aminah
+              </h1>
+              <p
+                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+              >
+                Partnership Engagement Lead
+              </p>
+            </div>
+
+            <!-- CARD 6 MOBILE-->
+            <div
+              class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              data-aos="zoom-in-up"
+              data-aos-duration="3000"
+            >
+              <div
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                style="
+                  background: url(./images/card6.png) center center/cover
+                    no-repeat;
+                "
+              ></div>
+              <h1
+                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+              >
+                Sulaiman Aminah
+              </h1>
+              <p
+                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+              >
+                Partnership Engagement Lead
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4 -->
+      <section class="mx-5 lg:mt-[7rem] lg:mx-24">
+        <div>
+          <h1
+            class="text-center lg:text-[2.5rem] lg:leading-[4.7rem] lg:mb-5 font-bold"
+          >
+            Interested in Getting Your Company Involved?
+          </h1>
+          <p class="text-center text-[1.6rem] text-[#808080]">
+            Our corporate allies have united with the foremost experts in the
+            field of sexual violence to cultivate environments of safety and
+            respect, benefiting not just their clientele and workforce but
+            society at large. If your organization is driven by a vision of
+            contributing to societal well-being and seeks to be at the forefront
+            of effecting positive change, we invite you to join us in this
+            critical mission.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 5 -->
+      <section class="mx-5 lg:flex justify-between lg:mt-[7rem] lg:mx-24">
+        <div>
+          <div class="flex gap-10">
+            <div class="w-[5rem] h-[5rem] p-3 bg-[#f2f2f2] rounded-full">
+              <img src="./images/heart.png" />
+            </div>
+            <h1
+              class="text-center lg:text-[2.5rem] lg:leading-[4.7rem] font-bold"
+            >
+              Donate
+            </h1>
+          </div>
+          <p class="text-[1.6rem] text-[#808080] w-[49rem] lg:mt-[2rem]">
+            Our corporate allies have united with the foremost experts in the
+            field of sexual violence to cultivate environments of safety and
+            respect, benefiting not just their clientele and workforce but
+            society at large. If your organization is driven by a vision of
+            contributing to societal well-being and seeks to be at the forefront
+            of effecting positive change, we invite you to join us in this
+            critical mission.
+          </p>
+        </div>
+
+        <div>
+          <div class="flex gap-10">
+            <div class="w-[5rem] h-[5rem] p-3 bg-[#f2f2f2] rounded-full">
+              <img src="./images/crowd-of-users.png" />
+            </div>
+            <h1
+              class="text-center lg:text-[2.5rem] lg:leading-[4.7rem] font-bold"
+            >
+              Volunteer
+            </h1>
+          </div>
+          <p class="text-[1.6rem] text-[#808080] w-[49rem] lg:mt-[2rem]">
+            Mobilize your workforce and customer base to engage in fundraising
+            efforts and actively disseminate information about us, and the vital
+            resources we provide for survivors. Together, we can extend our
+            reach, elevate awareness, and enhance the availability of support
+            services for survivors.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- THIS IS THE FOOTER AREA -->
+
+    <footer class="bg-[#372549] px-3 py-7 mt-6 lg:mt-[7rem] lg:px-24 lg:py-10">
+      <!-- UPPER DIV -->
+      <div class="text-white lg:flex lg:justify-between">
+        <div>
+          <img src="./images/footer-logo.png" class="h-[5rem] w-[17rem]" />
+
+          <p
+            class="cursor-default lg:text-[1.25rem] md:text-base lg:text-base italic tracking-widest lg:py-4"
+          >
+            A home for the voiceless...
+          </p>
+
+          <div
+            class="flex items-center gap-2 justify-center mt-2 lg:flex lg:gap-4 lg:justify-normal lg:my-4"
+          >
+            <img
+              src="./images/facebook-app-symbol.png"
+              class="h-5 p-1 lg:h-10 lg:p-2 lg:border-2 rounded-full border border-black cursor-pointer"
+            />
+            <img
+              src="./images/instagram (1).png"
+              class="h-5 p-1 lg:h-10 lg:p-2 lg:border-2 rounded-full border border-black cursor-pointer"
+            />
+            <img
+              src="./images/twitter (1).png"
+              class="h-5 p-1 lg:h-10 lg:p-2 lg:border-2 rounded-full border border-black cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <div class="lg:flex lg:gap-20">
+          <div class="">
+            <h2 class="lg:text-[2rem] lg:pb-3">About</h2>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+              Resources
+            </p>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+              Volunteers
+            </p>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+              Business Model
+            </p>
+          </div>
+
+          <div class="">
+            <h2 class="lg:text-[2rem] lg:pb-3">Contact</h2>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+              +2349063174221
+            </p>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+              +2349063174221
+            </p>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+              +2349063174221
+            </p>
+          </div>
+
+          <div class="">
+            <h2 class="lg:text-[2rem] lg:pb-3">Support</h2>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+              Help Center
+            </p>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">NGO</p>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+              Panership
+            </p>
+          </div>
+
+          <div class="">
+            <h2 class="lg:text-[2rem] lg:pb-3">News</h2>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+              Our Resources
+            </p>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">Blogs</p>
+            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+              Events
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOWER DIV -->
+      <div class="lg:flex lg:items-center lg:justify-between">
+        <div class="lg:mt-4">
+          <p class="lg:text-[1.5rem] font-semibold text-white">Address:</p>
+          <p
+            class="cursor-default text-[#a9a8a8] text-[1.25rem] w-[20rem] lg:w-[26rem] lg:text-base"
+          >
+            City of Refuge: No 14, Station Road, Along Royalton Hotel, GRA,
+            Ilorin, Kwara State.
+          </p>
+        </div>
+
+        <form class="mt-1 lg:mt-3 relative">
+          <input
+            type="email"
+            placeholder="Email address"
+            class="w-[16rem] px-2 h-10 lg:w-[33.063rem] lg:h-[6.25rem] rounded-[6.25rem] lg:text-[1.25rem] lg:px-10 outline-none text-black"
+          />
+          <button
+            type="submit"
+            class="bg-[#372549] absolute right-2 top-1 text-white cursor-pointer h-11 px-2 rounded-[6.25rem] lg:text-[1.25rem] lg:h-[5.625rem] lg:w-[12.063rem]"
+          >
+            Sign up
+          </button>
+        </form>
+      </div>
+    </footer>
+
+    <!-- COPYRIGHT DIV -->
+    <div
+      class="text-[0.7rem] lg:text-[0.9rem] py-2 text-black text-center lg:text-left"
+    >
+      <p class="text-center">© 2024 Secure Her Abound. All-Rights Reserved.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
