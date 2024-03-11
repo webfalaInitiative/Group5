@@ -26,35 +26,19 @@
       * {
         font-family: "Roboto", sans-serif;
       }
-      /* li a:before {
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: 0;
-        height: 3px;
-        width: 100%;
-        background: #372549;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.8s linear;
-      }
-      li a:hover:before {
-        transform: scaleX(1);
-        transform-origin: left;
-      }*/
-
       .animate__animated.animate__backInDown {
         --animate-duration: 3s;
       }
 
       #nav-links {
         position: fixed;
-        width: 100%;
-        height: 45%;
+        width: 81.5%;
+        height: 100%;
         top: 0;
-        padding: 3.125rem;
+        overflow: hidden;
+        padding: 0.85rem 1rem;
         right: -31.25rem;
-        transition: 0.5s;
+        transition: 1s;
         z-index: 1000;
       }
     </style>
@@ -167,13 +151,13 @@
 
     <main>
       <div
-        class="h-[70.75rem] w-[78.625rem] bg-[#F2DAF0] mx-auto lg:mt-[7rem] rounded-[20px]"
+        class="hidden lg:block h-[70.75rem] w-[78.625rem] bg-[#F2DAF0] mx-auto lg:mt-[7rem] rounded-[20px]"
       >
         <div class="lg:pt-[6rem] lg:pb-[1rem]">
           <h1 class="font-bold text-[1.875rem] text-center">Get In Touch</h1>
           <p class="text-center text-[1.25rem]">
             <span class="text-[1.5rem]">Have Questions?</span> We are here for
-            you! Drop us a line/ Write us an email/ Send us a text
+            you! Drop us a line/ Write us an email/ Send us a text...
           </p>
         </div>
 
@@ -213,24 +197,6 @@
                   </p>
                 </div>
               </div>
-
-              <!-- <div
-                class="flex items-center gap-2 justify-center mt-[5rem] lg:flex lg:gap-4 lg:justify-normal lg:my-[10rem]"
-              >
-                <img
-                  src="./images/facebook-app-symbol.png"
-                  class="h-5 p-1 lg:h-[3.75rem] lg:p-2 lg:border-2 rounded-full border bg-[#ffffff] cursor-pointer"
-                />
-                <img
-                  src="./images/instagram (1).png"
-                  class="h-5 p-1 lg:h-[3.75rem] lg:p-2 lg:border-2 rounded-full border bg-[#ffffff] cursor-pointer"
-                />
-                <img
-                  src="./images/twitter (1).png"
-                  class="h-5 p-1 lg:h-[3.75rem] lg:p-2 lg:border-2 rounded-full border bg-[#ffffff] cursor-pointer"
-                />
-              </div> -->
-
               <div
                 class="flex items-center gap-2 justify-center mt-[5rem] lg:flex lg:gap-4 lg:justify-normal lg:my-[10rem]"
               >
@@ -316,7 +282,73 @@
       </div>
     </main>
 
-    <!-- THIS IS THE FOOTER AREA -->
+    <!-- THIS IS THE FORM FOR MOBILE -->
+    <!-- FORM... -->
+    <form class="mx-4 lg:hidden">
+      <div class="mt-9">
+        <h1 class="font-bold text-[1.5rem] text-left">Get In Touch</h1>
+        <p class="text-left text-[14px] mt-[0.5rem] leading-[20px] mb-9">
+          Have Questions? We are here for you! Drop us a line/ Write us an
+          email/ Send us a text...
+        </p>
+      </div>
+
+      <div class="lg:flex">
+        <div class="form-group mb-3">
+          <label for="fname" class="lg:text-[1.25rem]">Name</label><br />
+          <input
+            type="text"
+            required
+            class="rounded-full border-2 outline-none w-full h-[3rem] px-5"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label for="lname" class="lg:text-[1.25rem]">Phone Number</label
+          ><br />
+          <input
+            type="number"
+            required
+            class="rounded-full border-2 outline-none w-full h-[3rem] px-5"
+          />
+        </div>
+      </div>
+      <div class="lg:mt-[1.5rem] mb-3 form-group">
+        <label for="email">Email Address</label><br />
+        <input
+          type="email"
+          required
+          class="border-2 outline-none rounded-full w-full h-[3rem] px-5"
+        />
+      </div>
+      <div class="">
+        <label for="msg">Message</label><br />
+        <textarea
+          name=""
+          msg
+          cols="30"
+          rows="10"
+          placeholder="write your message"
+          class="h-[6rem] w-full border-2 px-5 py-2 outline-none rounded-[20px]"
+        ></textarea>
+      </div>
+
+      <div class="flex items-start gap-1 mt-[1rem] mb-9">
+        <input type="checkbox" id="subscribe" name="radio" class="h-[0.8rem]" />
+        <label for="checkbox" class="text-[13px] leading-[16px]"
+          >Subscribe to receive the latest news and research materials</label
+        >
+      </div>
+
+      <div class="form-submit">
+        <button
+          type="submit"
+          id="submit-btn"
+          class="text-white bg-[#372549] hover:bg-[#5c4a6f] duration-300 w-full h-[3rem] rounded-full"
+        >
+          <a href="index.html">Send Message</a>
+        </button>
+      </div>
+    </form>
 
     <!-- THIS IS THE FOOTER AREA -->
 
@@ -428,6 +460,7 @@
     >
       <p class="text-center">© 2024 Secure Her Abound. All-Rights Reserved.</p>
     </div>
-    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
