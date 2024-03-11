@@ -147,9 +147,11 @@ function allowAutoRedirect() {
 }
 
 onAuthStateChanged(auth, (user) => {
+  console.log(user);
+  console.log(!preventAutoRedirectOnLoad);
   if (user && !preventAutoRedirectOnLoad) {
     // User is signed in, and we allow redirecting now
-    console.log("user is signed in");
+    alert("user is signed in");
     window.location.href = "library.html";
   } else if (!user) {
     console.log("User is signed out!");

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link href="./output.css" rel="stylesheet" />
+    <!-- <link href="./output.css" rel="stylesheet" /> -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -18,42 +18,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="flex justify-center my-[3rem]">
-      <img src="./images/logo.png" class="h-[4.563rem] w-[15.438rem]" />
+    <header class="flex justify-center m-4 lg:my-[3rem]">
+      <img
+        src="./images/logo.png"
+        class="h-[3rem] lg:h-[4.563rem] lg:w-[15.438rem]"
+      />
     </header>
-    <main class="max-w-[77.25rem] flex mx-auto mt-10">
+    <main class="max-w-[77.25rem] lg:flex mx-auto mt-10">
       <div
         style="
           background: url(./images/signupimg.jpg) center center/cover no-repeat;
         "
-        class="h-[44.75rem] w-[38.625rem] rounded-[30px] relative"
+        class="h-[44.75rem] w-[38.625rem] rounded-[30px] relative hidden lg:block"
       >
         <div
           class="h-[44.75rem] w-[38.625rem] rounded-[30px] absolute bg-black opacity-50"
         ></div>
       </div>
       <!-- FORM TAG -->
-      <div class="h-[44.75rem] w-[38.625rem]">
+      <div class="lg:h-[44.75rem] lg:w-[38.625rem]">
         <div class="px-3 md:px-10 lg:px-10">
           <h1
-            class="text-3xl md:text-5xl lg:text-5xl font-bold text-center md:mb-10 lg:mb-5 text-[#372549]"
+            class="text-[24px] lg:text-5xl font-bold text-center mb-3 lg:mb-10 text-[#372549]"
           >
             Login
           </h1>
           <p
-            class="font-medium text-center text-base md:text-lg lg:text-[23px] mb-3 md:mb-5 lg:mb-5 text-[#929191]"
+            class="text-[16px] font-medium text-center lg:text-[23px] mb-3 lg:mb-5 text-[#929191]"
           >
             Welcome Back!
           </p>
 
           <form>
-            
-            <div class="relative mb-3">
+            <div class="relative mb-2 lg:mb-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="#372549"
-                class="h-4 md:h-5 lg:h-5 absolute left-[0.6rem] md:right-3 lg:right-3 top-3 md:top-4 lg:top-[1.3rem]"
+                class="h-4 md:h-5 lg:h-5 absolute left-[1rem] md:right-3 lg:right-3 top-[1rem] md:top-4 lg:top-[1.3rem]"
               >
                 <path
                   d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
@@ -65,22 +67,22 @@
 
               <input
                 type="email"
-                id="email"
+                id="login-email"
                 placeholder="Email"
-                class="border-2 h-[3.75rem] pl-9 pr-6 py-2 md:py-3 lg:py-3 w-full outline-none text-base md:text-lg lg:text-lg rounded-[8px]"
+                class="border-2 h-[3rem] lg:h-[3.75rem] pl-11 pr-6 py-2 md:py-3 lg:py-3 w-full outline-none text-base md:text-lg lg:text-lg rounded-full"
               />
               <p
                 id="error2"
-                class="text-center mt-1 font-bold"
+                class="text-center mt-1 text-[12px] lg:text-[14px] font-normal lg:font-bold"
                 style="color: red"
               ></p>
             </div>
-            <div class="relative mb-3">
+            <div class="relative mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="#372549"
-                class="h-4 md:h-5 lg:h-5 absolute left-[0.6rem] md:right-3 lg:right-3 top-3 md:top-4 lg:top-[1.3rem]"
+                class="h-4 md:h-5 lg:h-5 absolute left-[1rem] top-[1rem] md:top-4 lg:top-[1.3rem]"
               >
                 <path
                   fill-rule="evenodd"
@@ -92,7 +94,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="#372549"
-                class="pass-icon h-5 md:h-6 lg:h-6 absolute right-3 md:right-3 lg:right-3 top-3 md:top-4 lg:top-[1.2rem] cursor-pointer"
+                class="pass-icon h-4 md:h-6 lg:h-6 absolute right-[1.2rem] md:right-3 lg:right-5 top-[1rem] md:top-4 lg:top-[1.2rem] cursor-pointer"
               >
                 <path
                   d="M3.53 2.47a.75.75 0 0 0-1.06 1.06l18 18a.75.75 0 1 0 1.06-1.06l-18-18ZM22.676 12.553a11.249 11.249 0 0 1-2.631 4.31l-3.099-3.099a5.25 5.25 0 0 0-6.71-6.71L7.759 4.577a11.217 11.217 0 0 1 4.242-.827c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113Z"
@@ -106,48 +108,52 @@
               </svg>
               <input
                 type="password"
-                id="pass"
+                id="login-pass"
                 placeholder="Password"
-                class="border-2 h-[3.75rem] pl-9 pr-6 py-2 md:py-3 lg:py-3 w-full outline-none text-base md:text-lg lg:text-lg rounded-[8px]"
+                class="border-2 h-[3rem] lg:h-[3.75rem] pl-11 pr-6 py-2 md:py-3 lg:py-3 w-full outline-none text-base md:text-lg lg:text-lg rounded-full"
               />
               <p
                 id="error3"
-                class="text-center md:mt-1 lg:mt-1 font-normal md:font-bold lg:font-bold"
+                class="text-center mt-1 text-[12px] lg:text-[14px] font-normal lg:font-bold"
                 style="color: red"
               ></p>
             </div>
-            
-            <button
-              id="loginBtn"
-              class="mt-3 md:mt-6 lg:mt-6 w-full py-2 md:py-3 lg:py-3 text-base md:text-lg lg:text-lg h-[3.75rem] text-[#ffffff] font-bold bg-[#372549] rounded-[8px]"
-            >
-              <a href="#">Continue</a>
-            </button>
-            <p
-              class="text-[14px] md:text-base lg:text-base text-center text-[#372549] my-1 md:my-2 lg:my-2"
-            >
-              OR
-            </p>
-            <div>
+
+            <div class="mt-10">
               <button
-                id="googleAdd"
-                class="w-full md:py-3 lg:py-3 text-base md:text-lg lg:text-lg h-[3.75rem] font-bold text-[#ffffff] bg-[#372549] rounded-[8px]"
+                id="login-btn"
+                class="login-btn w-full py-2 md:py-3 lg:py-3 text-base md:text-lg lg:text-lg h-[3rem] lg:h-[3.75rem] text-[#ffffff] font-bold bg-[#372549] rounded-full"
               >
-                <a href="#" class="flex items-center justify-center gap-3"
-                  ><img
-                    src="./images/google.png"
-                    class="h-5 md:h-6 lg:h-6 cursor-pointer"
-                  />
-                  Continue with Google</a
-                >
+                <a href="#">Continue</a>
               </button>
+              <p
+                class="text-[12px] md:text-base lg:text-base text-center text-[#372549] my-1 md:my-2 lg:my-2"
+              >
+                OR
+              </p>
+              <div>
+                <button
+                  id="googleAddBtn"
+                  class="w-full md:py-3 lg:py-3 text-base md:text-lg lg:text-lg py-2 h-[3rem] lg:h-[3.75rem] font-bold text-[#ffffff] bg-[#372549] rounded-full"
+                >
+                  <a href="#" class="flex items-center justify-center gap-3"
+                    ><img
+                      src="./images/google.png"
+                      class="h-5 md:h-6 lg:h-6 cursor-pointer"
+                    />
+                    Continue with Google</a
+                  >
+                </button>
+              </div>
+              <p
+                class="text-sm md:text-lg lg:text-lg text-center font-medium mt-3 text-[#929191]"
+              >
+                Don't have an account?
+                <a href="./signup.html" class="font-bold text-[#372549]"
+                  >Sign Up</a
+                >
+              </p>
             </div>
-            <p
-              class="text-sm md:text-lg lg:text-lg text-center font-medium mt-3 text-[#929191]"
-            >
-              Already have an account?
-              <a href="./login.html" class="font-bold text-[#372549]">Login</a>
-            </p>
           </form>
         </div>
       </div>

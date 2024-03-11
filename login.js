@@ -28,13 +28,14 @@ const database = getDatabase(app);
 const auth = getAuth();
 const provider = new GoogleAuthProvider();
 
-const emailInput = document.querySelector("#email");
-const passwordInput = document.querySelector("#pass");
-const loginBtn = document.querySelector("#loginBtn");
-const googleBtn = document.querySelector("#googleAdd");
-const emailError = document.querySelector("#error2");
-const passwordError = document.querySelector("#error3");
-const passwordIcon = document.querySelector(".pass-icon");
+const emailInput = document.querySelector("#login-email");
+const passwordInput = document.querySelector("#login-pass");
+const loginBtn = document.querySelector(".login-btn");
+console.log(loginBtn);
+const loginGoogleBtn = document.querySelector("#googleAddBtn");
+const loginEmailError = document.querySelector("#error2");
+const loginPasswordError = document.querySelector("#error3");
+const loginPasswordIcon = document.querySelector(".pass-icon");
 
 const passwordRegex = /^[a-zA-Z0-9!@#\$%\^\&*\)\(+=._-]{6,}$/g;
 
@@ -44,33 +45,35 @@ loginBtn.addEventListener("click", (e) => {
   let hasError = false;
 
   if (emailInput.value === "") {
-    emailError.innerHTML = "email address field is required";
+    loginEmailError.innerHTML = "email address field is required";
     hasError = true;
   } else if (emailInput.value.length <= 10) {
-    emailError.innerHTML = "enter a valid email address";
+    loginEmailError.innerHTML = "enter a valid email address";
     hasError = true;
   } else if (
     !emailInput.value.includes("@") &&
     !emailInput.value.includes(".")
   ) {
-    emailError.innerHTML = "email must include '@' and '.' in the right place";
+    loginEmailError.innerHTML =
+      "email must include '@' and '.' in the right place";
     hasError = true;
   } else {
-    emailError.innerHTML = "";
+    loginEmailError.innerHTML = "";
   }
 
   if (passwordInput.value === "") {
-    passwordError.innerHTML = "password field is required";
+    loginPasswordError.innerHTML = "password field is required";
     hasError = true;
   } else if (!passwordRegex.test(passwordInput.value)) {
-    passwordError.innerHTML =
+    loginPasswordError.innerHTML =
       "password must be a combination of all characters";
     hasError = true;
   } else if (passwordInput.value.length <= 7) {
-    passwordError.innerHTML = "password must be at least 8 characters long";
+    loginPasswordError.innerHTML =
+      "password must be at least 8 characters long";
     hasError = true;
   } else {
-    passwordError.innerHTML = "";
+    loginPasswordError.innerHTML = "";
   }
 
   if (!hasError) {
@@ -83,7 +86,6 @@ loginBtn.addEventListener("click", (e) => {
         // Signed up
         const user = userCredential.user;
         set(ref(database, "users/" + user.uid), {
-          username: usernameInput.value,
           email: emailInput.value,
         }).catch((error) => {
           console.error("Error writing data to the database:", error.message);
@@ -125,9 +127,11 @@ function allowAutoRedirect() {
 }
 
 onAuthStateChanged(auth, (user) => {
+  console.log(user);
+  console.log(!preventAutoRedirectOnLoad);
   if (user && !preventAutoRedirectOnLoad) {
     // User is signed in, and we allow redirecting now
-    console.log("user is signed in");
+    alert("user is signed in");
     window.location.href = "library.html";
   } else if (!user) {
     console.log("User is signed out!");
@@ -135,27 +139,39 @@ onAuthStateChanged(auth, (user) => {
   preventAutoRedirectOnLoad = false;
 });
 
-googleBtn.addEventListener("click", (e) => {
+loginGoogleBtn.addEventListener("click", (e) => {
   e.preventDefault();
   userSignInWithGoogle();
 
   allowAutoRedirect();
 });
 
-// PASSWORD $$ CONFIRM-PASSWORD ICON
+// PASSWORD ICON
 
 let isPasswordVisible = false;
-passwordIcon.addEventListener("click", () => {
+loginPasswordIcon.addEventListener("click", () => {
   if (isPasswordVisible) {
     passwordInput.type = "password";
-    passwordIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#372549" class="w-6 h-6">
-    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
+    loginPasswordIcon.innerHTML = `<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="#372549"
+    class="pass-icon h-4 md:h-6 lg:h-6 absolute right-[1.2rem] md:right-3 lg:right-5 top-[1rem] md:top-4 lg:top-[1.2rem] cursor-pointer"
+  >
+    <path
+      d="M3.53 2.47a.75.75 0 0 0-1.06 1.06l18 18a.75.75 0 1 0 1.06-1.06l-18-18ZM22.676 12.553a11.249 11.249 0 0 1-2.631 4.31l-3.099-3.099a5.25 5.25 0 0 0-6.71-6.71L7.759 4.577a11.217 11.217 0 0 1 4.242-.827c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113Z"
+    />
+    <path
+      d="M15.75 12c0 .18-.013.357-.037.53l-4.244-4.243A3.75 3.75 0 0 1 15.75 12ZM12.53 15.713l-4.243-4.244a3.75 3.75 0 0 0 4.244 4.243Z"
+    />
+    <path
+      d="M6.75 12c0-.619.107-1.213.304-1.764l-3.1-3.1a11.25 11.25 0 0 0-2.63 4.31c-.12.362-.12.752 0 1.114 1.489 4.467 5.704 7.69 10.675 7.69 1.5 0 2.933-.294 4.242-.827l-2.477-2.477A5.25 5.25 0 0 1 6.75 12Z"
+    />
   </svg>`;
     isPasswordVisible = false;
   } else {
     passwordInput.type = "text";
-    passwordIcon.innerHTML = `<svg
+    loginPasswordIcon.innerHTML = `<svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="#372549"
@@ -174,4 +190,3 @@ passwordIcon.addEventListener("click", () => {
     isPasswordVisible = true;
   }
 });
-

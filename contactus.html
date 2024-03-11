@@ -60,13 +60,16 @@
     </style>
   </head>
   <body>
-    <header class="m-5 md:mx-14 lg:mx-24 lg:my-10 relative">
+    <header class="m-4 lg:mx-24 lg:my-10 relative">
       <nav class="flex justify-between items-center">
-        <img src="./images/logo.png" class="h-[4.563rem] w-[15.438rem]" />
+        <img
+          src="./images/logo.png"
+          class="h-[3rem] lg:h-[4.563rem] lg:w-[15.438rem]"
+        />
 
         <ul class="hidden md:hidden lg:flex lg:gap-16 lg:text-xl">
           <li
-            class="hover:text-[#372549] hover:scale-125 hover:ease-out active:text-[#4B3B5B] hover:font-bold duration-300"
+            class="hover:text-[#372549] hover:scale-125 hover:ease-out active:text-[#4B3B5B] duration-300 hover:font-bold"
           >
             <a href="./index.html">Home</a>
           </li>
@@ -87,7 +90,7 @@
 
         <button
           type="button"
-          class="hidden md:hidden lg:block lg:text-xl lg:px-8 lg:rounded-full lg:text-white lg:h-[5.625rem] lg:w-[16.188rem] lg:bg-[#372549] lg:hover:bg-[#5c4a6f] lg:duration-300"
+          class="hidden md:hidden lg:block lg:text-xl lg:px-8 lg:rounded-full lg:text-white lg:h-[5.625rem] lg:w-[16.188rem] active:bg-[#3f2a54] bg-[#372549] hover:bg-[#5c4a6f] lg:duration-300"
         >
           <a href="./contactus.html">Contact Us</a>
         </button>
@@ -96,25 +99,63 @@
         <div class="lg:hidden">
           <div>
             <div id="nav-links" class="bg-[#372549]">
-              <div id="nav-lists" class="text-white flex flex-col gap-3">
-                <p><a href="./images/">Home</a></p>
+              <img src="./images/footer-logo.png" class="h-[2.6rem]" />
+              <div
+                id="nav-lists"
+                class="text-white text-[18px] flex flex-col gap-3 mt-[3rem]"
+              >
+                <p><a href="./index.html">Home</a></p>
                 <p><a href="./about.html">About Us</a></p>
                 <p><a href="./library.html">Our Library</a></p>
-                <p class="border-2 w-[5rem] p-2 flex justify-center">
+                <p>
                   <a href="./contactus.html">Contact Us</a>
                 </p>
               </div>
               <span
-                class="material-symbols-outlined flex absolute top-[1.875rem] text-white right-[2.5rem] text-3xl"
+                class="material-symbols-outlined flex absolute top-[1.3rem] text-white left-[15rem] text-3xl"
                 id="close-icon"
               >
                 close
               </span>
+
+              <!-- ADDRESS & CONTACT & SOCIALS - FOR SIDEBAR -->
+              <div class="mt-[70%]">
+                <div class="mt-5">
+                  <p class="text-[14px] text-white">Address:</p>
+                  <p
+                    class="cursor-default text-[#a9a8a8] text-[12px] w-[15rem]"
+                  >
+                    City of Refuge: No 14, Station Road, Along Royalton Hotel,
+                    GRA, Ilorin, Kwara State.
+                  </p>
+                </div>
+                <div class="mt-3">
+                  <p class="text-[14px] text-white">Contact:</p>
+                  <p
+                    class="cursor-default text-[#a9a8a8] text-[12px] w-[20rem]"
+                  >
+                    +2349063174221
+                  </p>
+                </div>
+                <!-- SOCIAL ICONS -->
+                <div class="flex items-center gap-4 mt-[2rem]">
+                  <a href="https://web.facebook.com/?_rdc=1&_rdr"
+                    ><img src="./images/fbk.png" class="h-7 cursor-pointer"
+                  /></a>
+
+                  <a href="https://www.instagram.com/moongoddessherself/"
+                    ><img src="./images/IG.png" class="h-7 cursor-pointer"
+                  /></a>
+                  <a href="https://twitter.com/girle_45"
+                    ><img src="./images/Xapp.png" class="h-7 cursor-pointer"
+                  /></a>
+                </div>
+              </div>
             </div>
 
             <div class="menu">
               <span
-                class="menu-toggle material-symbols-outlined text-3xl lg:hidden cursor-pointer"
+                class="menu-toggle material-symbols-outlined text-[1.5rem] text-[#372549] lg:hidden cursor-pointer"
               >
                 menu
               </span>
@@ -277,7 +318,9 @@
 
     <!-- THIS IS THE FOOTER AREA -->
 
-    <footer class="bg-[#372549] px-4 py-7 mt-6 lg:mt-[7rem] lg:px-24 lg:py-10">
+    <!-- THIS IS THE FOOTER AREA -->
+
+    <footer class="bg-[#372549] px-4 py-7 mt-9 lg:mt-[7rem] lg:px-24 lg:py-10">
       <!-- UPPER DIV -->
       <div class="text-white lg:flex lg:justify-between">
         <div>
@@ -360,13 +403,9 @@
             <h2 class="mt-3 lg:mt-0 lg:text-[2rem] text-white lg:pb-3">News</h2>
             <p class="lg:text-[1.25rem] cursor-default">Vlogs</p>
             <p class="lg:text-[1.25rem] cursor-default">Blogs</p>
-            <p class="lg:text-[1.25rem] cursor-default">
-              Events
-            </p>
+            <p class="lg:text-[1.25rem] cursor-default">Events</p>
           </div>
         </div>
-
-        
       </div>
 
       <!-- LOWER DIV -->
@@ -380,20 +419,6 @@
             Ilorin, Kwara State.
           </p>
         </div>
-
-        <form class="mt-5 lg:mt-3 relative">
-          <input
-            type="email"
-            placeholder="Email address"
-            class="w-full px-7 h-[3.5rem] lg:w-[33.063rem] lg:h-[6.25rem] rounded-[6.25rem] lg:text-[1.25rem] lg:px-10 outline-none text-black"
-          />
-          <button
-            type="submit"
-            class="bg-[#372549] right-1 top-[0.15rem] text-[1rem] absolute text-white cursor-pointer h-[3.2rem] w-[6rem] px-2 rounded-[6.25rem] lg:text-[1.25rem] lg:h-[5.625rem] lg:right-2 lg:top-1 lg:w-[12.063rem]"
-          >
-            Sign up
-          </button>
-        </form>
       </div>
     </footer>
 
@@ -402,6 +427,7 @@
       class="text-[0.6rem] py-1 lg:text-[0.9rem] lg:py-2 text-black text-center lg:text-left"
     >
       <p class="text-center">© 2024 Secure Her Abound. All-Rights Reserved.</p>
+    </div>
     </div>
   </body>
 </html>
