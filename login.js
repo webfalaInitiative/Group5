@@ -90,7 +90,7 @@ loginBtn.addEventListener("click", (e) => {
         }).catch((error) => {
           console.error("Error writing data to the database:", error.message);
         });
-        alert("User created!");
+        console.log("User created!");
         window.location.href = "library.html"; // Redirect after successful sign up
       })
       .catch((error) => {
@@ -131,7 +131,7 @@ onAuthStateChanged(auth, (user) => {
   console.log(!preventAutoRedirectOnLoad);
   if (user && !preventAutoRedirectOnLoad) {
     // User is signed in, and we allow redirecting now
-    alert("user is signed in");
+    console.log("user is signed in");
     window.location.href = "library.html";
   } else if (!user) {
     console.log("User is signed out!");
