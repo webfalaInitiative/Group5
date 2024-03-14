@@ -20,23 +20,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font link -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="./src/assets/fonts/WEB/css/clash-display.css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
       * {
         font-family: "Roboto", sans-serif;
       }
 
-      .animate__animated.animate__backInDown {
-        --animate-duration: 1s;
-      }
-
-      .animate__bounceIn.animate__animated {
-        --animate-duration: 2s;
+      .animate__animated.animate__backInLeft {
+        --animate-duration: 3s;
       }
 
       #nav-links {
@@ -165,21 +164,21 @@
 
     <main>
       <section
-        class="mx-4 mt-[2.5rem] lg:mt-[7rem] lg:mx-24 lg:flex lg:justify-between lg:items-center"
+        class="mx-4 mt-[2.5rem] md:mt-[4.5rem] md:mx-20 2xl:mt-[7rem] 2xl:mx-24 md:flex md:justify-between md:items-center"
       >
         <div>
           <h1
-            class="text-[1.5rem] text-center lg:text-left lg:text-[4rem] lg:w-[45rem] lg:leading-[4.7rem] font-bold animate__animated animate__backInDown"
+            class="text-[1.5rem] text-center md:text-[3.5rem] md:text-left md:leading-[3.7rem] font-black 2xl:text-[4rem] 2xl:leading-[4.7rem] animate__animated animate__backInDown"
           >
             About
           </h1>
           <h1
-            class="-mt-[0.3rem] lg:mt-0 tracking-[0.1rem] text-[1.3rem] text-center lg:text-left lg:text-[4rem] lg:w-[45rem] lg:leading-[4.7rem] font-bold"
+            class="-mt-[0.3rem] 2xl:mt-0 tracking-[0.1rem] text-[1.3rem] md:text-[3rem] text-center md:text-left md:leading-[4rem] 2xl:text-[4rem] 2xl:w-[45rem] 2xl:leading-[4.7rem] font-black"
           >
             Secure Her Abound
           </h1>
           <p
-            class="hidden lg:block lg:w-[54rem] lg:text-[24px] lg:mt-5 text-[#808080] lg:leading-[2rem]"
+            class="leading-[18px] md:leading-[1.9rem] w-full md:w-[37rem] md:text-[20px] 2xl:mt-5 text-[#808080] hidden md:block 2xl:w-[54rem] 2xl:text-[24px] 2xl:leading-[2rem]"
           >
             Secure Her Abound is a groundbreaking digital platform dedicated to
             Combat Sexual and Gender-Based Violence. It was founded in 2024 and
@@ -187,7 +186,7 @@
           </p>
           <button
             type="button"
-            class="hidden md:hidden lg:mt-7 lg:block lg:text-xl lg:px-8 lg:rounded-full lg:text-white lg:h-[5.625rem] lg:w-[16.188rem] bg-[#372549] active:bg-[#3f2a54] hover:bg-[#5c4a6f] lg:duration-300"
+            class="hidden md:hidden 2xl:mt-7 2xl:block 2xl:text-xl 2xl:px-8 2xl:rounded-full 2xl:text-white 2xl:h-[5.625rem] 2xl:w-[16.188rem] bg-[#372549] active:bg-[#3f2a54] hover:bg-[#5c4a6f] 2xl:duration-300"
           >
             <a href="./contactus.html">Contact Us</a>
           </button>
@@ -195,10 +194,10 @@
         <div>
           <img
             src="./images/front-view-friends-hands.jpg"
-            class="mt-[1rem] lg:mt-0 lg:w-[50rem] lg:h-[40rem] rounded-[20px]"
+            class="mt-[2rem] w-full 2xl:mt-0 md:w-[40rem] md:h-[33rem] 2xl:w-[55rem] md:mt-[2.5rem] rounded-[1.3rem] 2xl:h-[40rem]"
           />
           <p
-            class="lg:hidden lg:text-[1.3rem] text-center mt-[1rem] text-[#808080]"
+            class="md:hidden 2xl:text-[1.3rem] text-center mt-[1rem] text-[#808080]"
           >
             Secure Her Abound is a groundbreaking digital platform dedicated to
             Combat Sexual and Gender-Based Violence. It was founded in 2024 and
@@ -208,25 +207,31 @@
       </section>
 
       <!-- SECTION 2 -->
-      <section class="mx-4 mt-[2.5rem] lg:mt-[7rem] lg:mx-24">
+      <section
+        class="mx-4 mt-[2.5rem] md:mt-[6rem] md:mx-20 2xl:mt-[7rem] 2xl:mx-24"
+      >
         <div>
           <h1
-            class="text-[1.3rem] text-center mb-2 lg:text-[2.5rem] lg:leading-[4.7rem] lg:mb-5 font-bold animate__bounceIn animate__animated animate__delay-2s"
+            class="text-[1.3rem] mb-[0.4rem] font-bold text-xl md:text-3xl md:mb-[0.7rem] md:text-[2.5rem] 2xl:text-[3rem] 2xl:mb-[0.9rem] text-center 2xl:leading-[4.7rem] animate__bounceIn animate__animated animate__delay-2s"
           >
             Our Mission
           </h1>
-          <p class="text-center lg:text-[1.6rem] text-[#808080]">
+          <p
+            class="2xl:text-[1.6rem] md:text-[1.3rem] w-full md:mt-[1.5rem] mt-[1rem] text-center text-[#808080] 2xl:mt-[2rem]"
+          >
             Our online community fosters safety and inclusivity, offering
             resources and advocacy while fostering solidarity among members.
           </p>
         </div>
         <div>
           <h1
-            class="text-[1.3rem] text-center mb-2 lg:text-[2.5rem] mt-[2.5rem] lg:mt-[7rem] lg:leading-[4.7rem] lg:mb-5 font-bold animate__bounceIn animate__animated animate__delay-2s"
+            class="mt-[2.5rem] md:mt-[6rem] 2xl:mt-[7rem] text-[1.3rem] mb-[0.4rem] font-bold text-xl md:text-3xl md:mb-[0.7rem] md:text-[2.5rem] 2xl:text-[3rem] 2xl:mb-[0.9rem] text-center 2xl:leading-[4.7rem] animate__bounceIn animate__animated animate__delay-2s"
           >
             Our Vision
           </h1>
-          <p class="text-center lg:text-[1.6rem] text-[#808080]">
+          <p
+            class="2xl:text-[1.6rem] mt-[1rem] md:text-[1.3rem] w-full md:mt-[1.5rem] text-center text-[#808080] 2xl:mt-[2rem]"
+          >
             We strive for a world where everyone, regardless of their gender
             feels safe and empowered. We want to create inclusive environments
             where individuals thrive with confidence and security.
@@ -235,9 +240,9 @@
       </section>
 
       <!-- SECTION 3 -->
-      <section class="mx-4 mt-[2.5rem] lg:mt-[7rem] lg:mx-24">
+      <section class="mx-4 mt-[2.5rem] 2xl:mt-[7rem] 2xl:mx-24">
         <h1
-          class="text-center text-[1.3rem] mb-2 lg:text-[2.5rem] lg:leading-[4.7rem] lg:mb-5 font-bold"
+          class="mt-[2.5rem] md:mt-[6rem] 2xl:mt-[7rem] text-[1.3rem] mb-[0.4rem] font-bold text-xl md:text-3xl md:mb-[0.7rem] md:text-[2.5rem] 2xl:text-[3rem] 2xl:mb-[0.9rem] text-center 2xl:leading-[4.7rem] animate__bounceIn animate__animated animate__delay-2s"
         >
           Meet The Team
         </h1>
@@ -247,28 +252,31 @@
         <div>
           <!-- UPPER CARDS -->
           <div
-            class="mx-2 mb-4 lg:mb-[0rem] mt-[1rem] md:mt-[2rem] md:mx-14 lg:mt-[3rem] lg:mx-24 lg:flex lg:gap-7"
+            class="mx-4 mt-[2.5rem] mb-4 md:mb-0 md:mt-[3rem] md:mx-20 md:gap-6 2xl:mt-[3rem] 2xl:mx-24 md:flex 2xl:gap-7"
           >
             <!-- CARD1 -->
             <div
-              class="hidden md:hidden lg:block mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="hidden md:block mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="flip-left"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[14rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/rukayat.jpg) center center/cover
                     no-repeat;
                 "
               ></div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+                class="text-center font-bold mt-[0.75rem] md:text-[1.2rem] md:mx-2 2xl:mx-0 2xl:w-full mx-auto 2xl:text-[1.5rem]"
               >
-                Lawal Rukayat
+                <a
+                  href="https://www.linkedin.com/in/lawal-rukayat-1b376823a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  >Lawal Rukayat</a
+                >
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Development Manager
               </p>
@@ -276,23 +284,26 @@
 
             <!-- CARD1 MOBILE -->
             <div
-              class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="md:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full bg-[#f2f2f2]"
               data-aos="zoom-in-up"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/t1.jpg) center center/cover no-repeat;
                 "
               ></div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+                class="text-center font-bold mt-[1rem] 2xl:w-full mx-auto 2xl:text-[1.5rem]"
               >
-                Lawal Rukayat
+                <a
+                  href="https://www.linkedin.com/in/lawal-rukayat-1b376823a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  >Lawal Rukayat</a
+                >
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Development Manager
               </p>
@@ -300,25 +311,25 @@
 
             <!-- CARD2 -->
             <div
-              class="mb-4 lg:mb-5 rounded-t-[1.3rem] h-[18rem] w-full md:hidden lg:block md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="zoom-in-up"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[14rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/t2.jpg) center center/cover no-repeat;
                 "
               ></div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+                class="text-center font-bold mt-[1rem] 2xl:w-full mx-auto 2xl:text-[1.5rem]"
               >
                 <a href="https://www.linkedin.com/in/ctokafor/"
                   >Cynthia Okafor</a
                 >
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Programs Manager
               </p>
@@ -326,26 +337,26 @@
 
             <!-- CARD 3 -->
             <div
-              class="hidden lg:block md:hidden mb-2 lg:mb-5 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="hidden md:block mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="flip-right"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[14rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/t3.jpeg) center center/cover
                     no-repeat;
                 "
               ></div>
               <h1
-                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] 2xl:w-full 2xl:text-[1.5rem]"
               >
                 <a href="https://web.facebook.com/oluwatoyinbam/?_rdc=1&_rdr"
                   >Aminat Agboola</a
                 >
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Collection Manager
               </p>
@@ -353,26 +364,26 @@
 
             <!-- CARD 3 MOBILE-->
             <div
-              class="md:hidden lg:hidden mb-4 lg:mb-5 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="block md:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="zoom-in-up"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/t3.jpeg) center center/cover
                     no-repeat;
                 "
               ></div>
               <h1
-                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] 2xl:w-full 2xl:text-[1.5rem]"
               >
                 <a href="https://web.facebook.com/oluwatoyinbam/?_rdc=1&_rdr"
                   >Aminat Agboola</a
                 >
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Collection Manager
               </p>
@@ -381,27 +392,27 @@
 
           <!-- LOWER CARDS -->
           <div
-            class="mx-2 md:mt-[2rem] md:mx-14 lg:mt-[1rem] lg:mx-24 lg:flex lg:gap-6"
+            class="mx-4 mb-4 md:mb-0 md:mt-[0.5rem] md:mx-20 md:gap-5 2xl:mt-[1rem] 2xl:mx-24 md:flex 2xl:gap-7"
           >
             <!-- CARD4 -->
             <div
-              class="hidden lg:block md:hidden mb-2 lg:mb-0 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="hidden md:block mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="flip-left"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[14rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/t4.png) center center/cover no-repeat;
                 "
               ></div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+                class="text-center font-bold mt-[1rem] 2xl:w-full mx-auto 2xl:text-[1.5rem]"
               >
                 <a href="https://twitter.com/Gem_Roheemah">Hamzat Roheemah</a>
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Communications Lead
               </p>
@@ -409,23 +420,23 @@
 
             <!-- CARD4 MOBILE-->
             <div
-              class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="block md:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="zoom-in-up"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/t4.png) center center/cover no-repeat;
                 "
               ></div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+                class="text-center font-bold mt-[1rem] 2xl:w-full mx-auto 2xl:text-[1.5rem]"
               >
                 <a href="https://twitter.com/Gem_Roheemah">Hamzat Roheemah</a>
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Communications Lead
               </p>
@@ -433,26 +444,26 @@
 
             <!-- CARD5 -->
             <div
-              class="mb-4 lg:block lg:mb-0 rounded-t-[1.3rem] h-[18rem] w-full md:hidden md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="block mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="zoom-in-up"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[14rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/t55.jpg) center center/cover
                     no-repeat;
                 "
               ></div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+                class="text-center font-bold mt-[1rem] 2xl:w-full mx-auto 2xl:text-[1.5rem]"
               >
                 <a href="https://www.facebook.com/rodiat.zulu?mibextid=ZbWKwL"
                   >Zulu Rodiat</a
                 >
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Lead For Basic Digital Skill
               </p>
@@ -460,24 +471,24 @@
 
             <!-- CARD 6 -->
             <div
-              class="hidden lg:block md:hidden mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="hidden md:block mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="flip-right"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[14rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/sulaiman-aminat.jpg) center
                     center/cover no-repeat;
                 "
               ></div>
               <h1
-                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] 2xl:w-full 2xl:text-[1.5rem]"
               >
                 <a href="https://twitter.com/Ammynarh">Sulaiman Aminah</a>
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Partnership Engagement Lead
               </p>
@@ -485,24 +496,24 @@
 
             <!-- CARD 6 MOBILE-->
             <div
-              class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="block md:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="zoom-in-up"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/sulaiman-aminat.jpg) center
                     center/cover no-repeat;
                 "
               ></div>
               <h1
-                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] 2xl:w-full 2xl:text-[1.5rem]"
               >
                 <a href="https://twitter.com/Ammynarh">Sulaiman Aminah</a>
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Partnership Engagement Lead
               </p>
@@ -511,23 +522,23 @@
 
           <!-- THIRD LAYER CARDS -->
           <div
-            class="mx-2 md:mt-[2rem] md:mx-14 lg:mt-[1rem] lg:mx-24 lg:flex lg:gap-6"
+            class="mx-4 mb-4 md:mb-0 md:mt-[0.5rem] md:mx-20 md:gap-5 2xl:mt-[1rem] 2xl:mx-24 md:flex 2xl:gap-7"
           >
             <!-- CARD7 -->
             <div
-              class="hidden lg:block md:hidden mb-2 lg:mb-0 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="hidden md:block mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="flip-left"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[14rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/ruth.jpg) center center/cover
                     no-repeat;
                 "
               ></div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+                class="text-center font-bold mt-[1rem] 2xl:w-full mx-auto 2xl:text-[1.5rem]"
               >
                 <a
                   href="https://www.linkedin.com/in/odukunle-ruth/?originalSubdomain=ng"
@@ -535,7 +546,7 @@
                 >
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Finance Lead
               </p>
@@ -543,19 +554,19 @@
 
             <!-- CARD7 MOBILE-->
             <div
-              class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="block md:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="zoom-in-up"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/ruth.jpg) center center/cover
                     no-repeat;
                 "
               ></div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+                class="text-center font-bold mt-[1rem] 2xl:w-full mx-auto 2xl:text-[1.5rem]"
               >
                 <a
                   href="https://www.linkedin.com/in/odukunle-ruth/?originalSubdomain=ng"
@@ -563,7 +574,7 @@
                 >
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
                 Finance Lead
               </p>
@@ -571,19 +582,19 @@
 
             <!-- CARD8 -->
             <div
-              class="mb-4 lg:block lg:mb-0 rounded-t-[1.3rem] h-[18rem] w-full md:hidden md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="zoom-in-up"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[14rem] 2xl:h-[18.375rem]"
                 style="
                   background: url(./images/ifeanyi.jpg) center center/cover
                     no-repeat;
                 "
               ></div>
               <h1
-                class="text-center font-bold mt-[1rem] lg:w-full mx-auto lg:text-[1.5rem]"
+                class="text-center font-bold mt-[1rem] 2xl:w-full mx-auto 2xl:text-[1.5rem]"
               >
                 <a
                   href="https://web.facebook.com/ify.debby.3/?paipv=0&eav=AfarxpI_xFkj_8MuB3hhaf5Y3pOE_hXujgsuZdQXJHSJvD8fQd488jaFhl29WzkyMyM&_rdc=1&_rdr"
@@ -591,59 +602,65 @@
                 >
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
-                Lead For Basic Digital Skill
+                Talent Lead
               </p>
             </div>
 
             <!-- CARD 9 -->
             <div
-              class="hidden lg:block md:hidden mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="hidden md:block mb-2 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="flip-right"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[14rem] 2xl:h-[18.375rem]"
                 style="
-                  background: url(./images/t66.jpg) center center/cover
+                  background: url(./images/rosemary.jpg) center center/cover
                     no-repeat;
                 "
               ></div>
               <h1
-                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] 2xl:w-full 2xl:text-[1.5rem]"
               >
-                <a href="https://twitter.com/Ammynarh">Tuntunyemi Rosemary</a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61556258473809&mibextid=ZbWKwL"
+                  >Tuntunyemi Rosemary</a
+                >
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
-                Partnership Engagement Lead
+                Instructional Design Lead
               </p>
             </div>
 
             <!-- CARD 9 MOBILE-->
             <div
-              class="md:hidden lg:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[18rem] md:w-[19.5rem] lg:h-[25rem] lg:w-[36rem] bg-[#f2f2f2]"
+              class="block md:hidden mb-4 rounded-t-[1.3rem] h-[18rem] w-full md:h-[19rem] md:w-[26rem] 2xl:h-[25rem] 2xl:w-[36rem] bg-[#f2f2f2]"
               data-aos="zoom-in-up"
               data-aos-duration="3000"
             >
               <div
-                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] lg:h-[18.375rem]"
+                class="rounded-t-[1.3rem] h-[13rem] md:h-[13rem] 2xl:h-[18.375rem]"
                 style="
-                  background: url(./images/t66.jpg) center center/cover
+                  background: url(./images/rosemary.jpg) center center/cover
                     no-repeat;
                 "
               ></div>
               <h1
-                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] lg:w-full lg:text-[1.5rem]"
+                class="text-center w-[18rem] mx-auto font-bold mt-[1rem] md:w-[18rem] 2xl:w-full 2xl:text-[1.5rem]"
               >
-                <a href="https://twitter.com/Ammynarh">Tuntunyemi Rosemary</a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61556258473809&mibextid=ZbWKwL"
+                  >Tuntunyemi Rosemary</a
+                >
               </h1>
               <p
-                class="text-center mt-[0.2rem] lg:w-full mx-auto lg:text-[1.3rem]"
+                class="text-center mt-[0.2rem] 2xl:w-full mx-auto 2xl:text-[1.3rem]"
               >
-                Partnership Engagement Lead
+                Instructional Design Lead
               </p>
             </div>
           </div>
@@ -651,14 +668,18 @@
       </section>
 
       <!-- SECTION 4 -->
-      <section class="mx-4 mt-[2.5rem] lg:mt-[7rem] lg:mx-24">
+      <section
+        class="mx-4 mt-[2.5rem] md:mt-[6rem] md:mx-20 2xl:mt-[7rem] 2xl:mx-24"
+      >
         <div>
           <h1
-            class="text-center text-[1.3rem] mb-2 lg:text-[2.5rem] lg:leading-[4.7rem] lg:mb-5 font-bold"
+            class="text-[1.3rem] mb-[0.4rem] font-bold text-xl md:text-3xl md:mb-[0.7rem] md:text-[2.5rem] 2xl:text-[3rem] 2xl:mb-[0.9rem] text-center 2xl:leading-[4.7rem] animate__bounceIn animate__animated animate__delay-2s"
           >
-            Interested in Getting your Company Involved?
+            Interested In Getting Your Company Involved?
           </h1>
-          <p class="text-center lg:text-[1.6rem] text-[#808080]">
+          <p
+            class="2xl:text-[1.6rem] md:text-[1.3rem] w-full md:mt-[1.5rem] mt-[1rem] text-center text-[#808080] 2xl:mt-[2rem]"
+          >
             Our corporate allies have united with the foremost experts in the
             field of sexual violence to cultivate environments of safety and
             respect, benefiting not just their clientele and workforce but
@@ -672,23 +693,25 @@
 
       <!-- SECTION 5 -->
       <section
-        class="mx-4 lg:flex justify-between mt-[2.5rem] lg:mt-[7rem] lg:mx-24"
+        class="md:mt-[6rem] md:mx-20 mx-4 md:flex md:justify-between md:items-center mt-[2.5rem] 2xl:mt-[7rem] 2xl:mx-24"
       >
         <div>
-          <div class="flex gap-5 lg:gap-10 items-center px-[26%] lg:px-[32%]">
+          <div
+            class="flex gap-5 2xl:gap-10 items-center px-[26%] md:pl-[38%] 2xl:px-[32%]"
+          >
             <div
-              class="w-[3rem] h-[3rem] p-3 lg:w-[5rem] lg:h-[5rem] lg:p-3 bg-[#f2f2f2] rounded-full"
+              class="w-[3rem] h-[3rem] p-3 md:w-[4rem] md:h-[4rem] 2xl:w-[5rem] 2xl:h-[5rem] 2xl:p-3 bg-[#f2f2f2] rounded-full"
             >
               <img src="./images/heart.png" />
             </div>
             <h1
-              class="text-center text-[1.3rem] lg:text-[2.5rem] lg:leading-[4.7rem] font-bold"
+              class="text-[1.3rem] mb-[0.4rem] font-bold text-xl md:text-3xl md:mb-[0.7rem] md:text-[2.5rem] 2xl:text-[3rem] 2xl:mb-[0.9rem] text-center 2xl:leading-[4.7rem]"
             >
               <a href="support.html">Give</a>
             </h1>
           </div>
           <p
-            class="lg:text-[1.6rem] mt-[1rem] text-center text-[#808080] lg:w-[49rem] lg:mt-[2rem]"
+            class="2xl:text-[1.6rem] mt-[1rem] md:text-[1.3rem] w-full md:mt-[1.5rem] text-center text-[#808080] md:w-[38rem] 2xl:w-[49rem] 2xl:mt-[2rem]"
           >
             Enhance our operational capabilities, and equip us with the
             necessary resources to combat sexual violence effectively. Engage
@@ -698,21 +721,23 @@
           </p>
         </div>
 
-        <div class="mt-[2.5rem] lg:mt-0" id="volunteer">
-          <div class="flex gap-5 lg:gap-10 items-center px-[24%] lg:px-[28%]">
+        <div class="mt-[2.5rem] md:mt-0" id="volunteer">
+          <div
+            class="flex gap-5 2xl:gap-10 items-center px-[24%] md:pl-[29%] 2xl:px-[28%]"
+          >
             <div
-              class="w-[3rem] h-[3rem] p-3 lg:w-[5rem] lg:h-[5rem] lg:p-3 bg-[#f2f2f2] rounded-full"
+              class="w-[3rem] h-[3rem] p-3 md:w-[4rem] md:h-[4rem] 2xl:w-[5rem] 2xl:h-[5rem] 2xl:p-3 bg-[#f2f2f2] rounded-full"
             >
               <img src="./images/crowd-of-users.png" />
             </div>
             <h1
-              class="text-center text-[1.3rem] lg:text-[2.5rem] lg:leading-[4.7rem] font-bold cursor-default"
+              class="text-[1.3rem] mb-[0.4rem] font-bold text-xl md:text-3xl md:mb-[0.7rem] md:text-[2.5rem] 2xl:text-[3rem] 2xl:mb-[0.9rem] text-center 2xl:leading-[4.7rem]"
             >
               Volunteer
             </h1>
           </div>
           <p
-            class="lg:text-[1.6rem] mt-[1rem] text-center text-[#808080] lg:w-[49rem] lg:mt-[2rem]"
+            class="2xl:text-[1.6rem] mt-[1rem] md:text-[1.3rem] w-full md:mt-[1.5rem] text-center text-[#808080] md:w-[38rem] 2xl:w-[49rem] 2xl:mt-[2rem]"
           >
             Become part of a supportive and inclusive community, impact causes,
             community development and environmental sustainability to education
@@ -726,77 +751,93 @@
 
     <!-- THIS IS THE FOOTER AREA -->
 
-    <footer class="bg-[#372549] px-4 py-7 mt-9 lg:mt-[7rem] lg:px-24 lg:py-10">
+    <footer
+      class="bg-[#372549] px-4 py-7 mt-9 md:mt-[5rem] md:px-20 md:py-9 2xl:mt-[7rem] 2xl:px-24 2xl:py-10"
+    >
       <!-- UPPER DIV -->
-      <div class="text-white lg:flex lg:justify-between">
+      <div class="text-white md:flex md:justify-between">
         <div>
           <a href="index.html"
             ><img
               src="./images/footer-logo.png"
-              class="h-[3rem] w-[10rem] lg:h-[5rem] lg:w-[17rem]"
+              class="h-[3rem] w-[10rem] md:h-[4rem] md:w-[15rem] 2xl:h-[5rem] 2xl:w-[17rem]"
           /></a>
 
           <p
-            class="cursor-default text-[12px] mt-3 lg:mt-0 lg:text-[1.25rem] md:text-base lg:text-base italic tracking-widest lg:py-4"
+            class="cursor-default text-[12px] mt-3 md:text-[1.1rem] 2xl:mt-0 2xl:text-[1.25rem] italic tracking-widest md:py-4"
           >
             A home for the voiceless...
           </p>
 
-          <div class="flex items-center gap-3 mt-2 lg:flex lg:gap-4 lg:my-4">
+          <div class="flex items-center gap-3 mt-2 md:gap-4 md:my-4">
             <a href="https://web.facebook.com/?_rdc=1&_rdr"
-              ><img src="./images/fbk.png" class="h-8 lg:h-10 cursor-pointer"
+              ><img src="./images/fbk.png" class="h-8 md:h-10 cursor-pointer"
             /></a>
 
             <a href="https://www.instagram.com/moongoddessherself/"
               ><img
                 src="./images/IG.png"
-                class="h-8 lg:h-10 border-black cursor-pointer"
+                class="h-8 md:h-10 border-black cursor-pointer"
             /></a>
             <a href="https://twitter.com/girle_45"
-              ><img src="./images/Xapp.png" class="h-8 lg:h-10 cursor-pointer"
+              ><img src="./images/Xapp.png" class="h-8 md:h-10 cursor-pointer"
             /></a>
           </div>
         </div>
 
-        <div class="lg:hidden mt-5">
+        <div class="md:hidden mt-5">
           <p class="text-[14px] text-white">Address:</p>
-          <p
-            class="lg:hidden cursor-default text-[#a9a8a8] text-[12px] w-[20rem] lg:w-[26rem] lg:text-base"
-          >
+          <p class="cursor-default text-[#a9a8a8] text-[12px] w-[20rem]">
             City of Refuge: No 14, Station Road, Along Royalton Hotel, GRA,
             Ilorin, Kwara State.
           </p>
         </div>
 
-        <div class="lg:flex lg:gap-20">
+        <div class="md:flex md:gap-20">
           <div class="text-[14px]">
-            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] lg:pb-3">About</h2>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+            <h2 class="mt-3 md:mt-0 md:text-[1.5rem] 2xl:text-[2rem] md:pb-3">
+              About
+            </h2>
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
               Resources
             </p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
               Volunteers
             </p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
               Business Model
             </p>
           </div>
 
           <div class="text-[14px]">
-            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] lg:pb-3">Contact</h2>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-pointer">
+            <h2 class="mt-3 md:mt-0 md:text-[1.5rem] 2xl:text-[2rem] md:pb-3">
+              Contact
+            </h2>
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-pointer"
+            >
               <a href="tel:+2349063174221" class="text-current"
                 >+2349063174221</a
               >
             </p>
 
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-pointer">
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-pointer"
+            >
               <a href="tel:+2349063174221" class="text-current"
                 >+2349063174221</a
               >
             </p>
 
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-pointer">
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-pointer"
+            >
               <a href="tel:+2349063174221" class="text-current"
                 >+2349063174221</a
               >
@@ -804,25 +845,39 @@
           </div>
 
           <div class="text-[14px]">
-            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] lg:pb-3">Support</h2>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+            <h2 class="mt-3 md:mt-0 md:text-[1.5rem] 2xl:text-[2rem] md:pb-3">
+              Support
+            </h2>
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
               Help Center
             </p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">NGO</p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
+              NGO
+            </p>
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
               Partnership
             </p>
           </div>
 
           <div class="text-[14px] text-[#a9a8a8]">
-            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] text-white lg:pb-3">News</h2>
-            <p class="lg:text-[1.25rem] cursor-default">
+            <h2
+              class="mt-3 md:mt-0 md:text-[1.5rem] 2xl:text-[2rem] md:pb-3 text-white"
+            >
+              News
+            </h2>
+            <p class="md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default">
               <a href="#news">Vlogs</a>
             </p>
-            <p class="lg:text-[1.25rem] cursor-default">
+            <p class="md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default">
               <a href="#news">Blogs</a>
             </p>
-            <p class="lg:text-[1.25rem] cursor-default">
+            <p class="md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default">
               <a href="#news">Events</a>
             </p>
           </div>
@@ -830,11 +885,11 @@
       </div>
 
       <!-- LOWER DIV -->
-      <div class="lg:flex lg:items-center lg:justify-between">
-        <div class="lg:mt-4 hidden lg:block">
-          <p class="lg:text-[1.5rem] lg:font-semibold text-white">Address:</p>
+      <div class="hidden md:flex md:items-center md:justify-between">
+        <div class="md:mt-4">
+          <p class="2xl:text-[2rem] md:text-[1.5rem] text-white">Address:</p>
           <p
-            class="cursor-default text-[#a9a8a8] text-[1.25rem] w-[20rem] lg:w-[26rem] lg:text-base"
+            class="cursor-default text-[#a9a8a8] 2xl:text-[1.5rem] md:text-[1.1rem] w-[23rem] 2xl:w-[26rem]"
           >
             City of Refuge: No 14, Station Road, Along Royalton Hotel, GRA,
             Ilorin, Kwara State.
@@ -845,12 +900,11 @@
 
     <!-- COPYRIGHT DIV -->
     <div
-      class="text-[0.6rem] py-1 lg:text-[0.9rem] lg:py-2 text-black text-center lg:text-left"
+      class="text-[0.6rem] py-1 md:text-[0.8rem] 2xl:text-[0.9rem] 2xl:py-2 text-black text-center 2xl:text-left"
     >
       <p class="text-center">© 2024 Secure Her Abound. All-Rights Reserved.</p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

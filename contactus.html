@@ -230,7 +230,7 @@
           </div>
 
           <!-- FORM... -->
-          <form class="">
+          <form action="https://formspree.io/f/xoqglrzn" method="POST">
             <div class="flex">
               <div>
                 <label for="fname" class="text-[1.25rem]">Name</label><br />
@@ -238,7 +238,7 @@
                   type="text"
                   name="fname"
                   id="fname"
-                  class="w-[18.813rem] h-[3.75rem] border-2 mr-5 outline-none text-[1.25rem] px-3 rounded-[10px]"
+                  class="w-[18.813rem] h-[3.75rem] border-2 mr-5 outline-none text-[1.25rem] px-7 rounded-full"
                 />
               </div>
               <div>
@@ -248,7 +248,7 @@
                   type="number"
                   name="lname"
                   id="lname"
-                  class="w-[18.813rem] h-[3.75rem] border-2 outline-none text-[1.25rem] px-3 rounded-[10px]"
+                  class="w-[18.813rem] h-[3.75rem] border-2 outline-none text-[1.25rem] px-7 rounded-full"
                 />
               </div>
             </div>
@@ -259,7 +259,7 @@
                 type="email"
                 name="email"
                 id="email"
-                class="w-[38.876rem] h-[3.75rem] border-2 outline-none text-[1.25rem] px-3 rounded-[10px]"
+                class="w-[38.876rem] h-[3.75rem] border-2 outline-none text-[1.25rem] px-7 rounded-full"
               />
             </div>
             <div class="mt-[1.5rem]">
@@ -270,7 +270,7 @@
                 id="message"
                 cols="30"
                 rows="10"
-                class="h-[10rem] border-2 outline-none text-[1.25rem] p-3 rounded-[10px] w-[38.876rem]"
+                class="h-[10rem] border-2 outline-none text-[1.25rem] px-7 py-3 rounded-[20px] w-[38.876rem]"
               ></textarea>
             </div>
             <div class="flex items-center gap-3 mt-[1.5rem]">
@@ -281,8 +281,8 @@
               >
             </div>
             <button
-              type="button"
-              class="text-[1.25rem] h-[3.75rem] w-[12rem] mx-[12rem] mt-[1.5rem] bg-[#372549] text-white rounded-[10px]"
+              type="submit"
+              class="text-[1.25rem] h-[3.75rem] w-[12rem] mx-[12rem] mt-[1.5rem] bg-[#372549] text-white rounded-full"
             >
               <a href="#">Send Message</a>
             </button>
@@ -293,7 +293,11 @@
 
     <!-- THIS IS THE FORM FOR MOBILE -->
     <!-- FORM... -->
-    <form class="mx-4 lg:hidden">
+    <form
+      action="https://formspree.io/f/xoqglrzn"
+      method="POST"
+      class="mx-4 lg:hidden"
+    >
       <div class="mt-9">
         <h1 class="font-bold text-[1.5rem] text-left">Get In Touch</h1>
         <p class="text-left text-[14px] mt-[0.5rem] leading-[20px] mb-9">
@@ -449,9 +453,15 @@
 
           <div class="text-[14px] text-[#a9a8a8]">
             <h2 class="mt-3 lg:mt-0 lg:text-[2rem] text-white lg:pb-3">News</h2>
-            <p class="lg:text-[1.25rem] cursor-default"><a href="#news">Vlogs</a></p>
-            <p class="lg:text-[1.25rem] cursor-default"><a href="#news">Blogs</a></p>
-            <p class="lg:text-[1.25rem] cursor-default"><a href="#news">Events</a></p>
+            <p class="lg:text-[1.25rem] cursor-default">
+              <a href="#news">Vlogs</a>
+            </p>
+            <p class="lg:text-[1.25rem] cursor-default">
+              <a href="#news">Blogs</a>
+            </p>
+            <p class="lg:text-[1.25rem] cursor-default">
+              <a href="#news">Events</a>
+            </p>
           </div>
         </div>
       </div>

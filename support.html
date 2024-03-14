@@ -42,6 +42,34 @@
         transition: 1s;
         z-index: 1000;
       }
+
+      @media screen and (max-width: 1440px) {
+        .hero-h1 {
+          font-size: 48px;
+          line-height: 55px;
+          width: 100%;
+        }
+
+        .span1 {
+          display: block;
+        }
+
+        .span2 {
+          display: block;
+        }
+
+        .hero-p {
+          width: 550px;
+        }
+
+        .kindly-h1 {
+          font-size: 50px;
+        }
+
+        .cards {
+          height: 45vh;
+        }
+      }
     </style>
   </head>
   <body>
@@ -121,11 +149,8 @@
                   <p class="text-[14px] text-white">Contact:</p>
                   <p
                     class="cursor-default text-[#a9a8a8] text-[12px] w-[20rem]"
-                  ></p>
-                  <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-pointer">
-                    <a
-                      href="tel:+2349063174221"
-                      class="text-inherit no-underline"
+                  >
+                    <a href="tel:+2349063174221" class="text-current"
                       >+2349063174221</a
                     >
                   </p>
@@ -158,7 +183,9 @@
       </nav>
     </header>
 
-    <section class="mx-4 mt-[2.5rem] lg:mx-[38rem] lg:mt-[5rem]">
+    <section
+      class="mx-4 mt-[2.5rem] md:mx-auto md:w-[100%] md:flex md:flex-col md:items-center md:mt-[5rem]"
+    >
       <h1 class="text-[20px] font-bold lg:text-[2rem]">
         Support Survivors Today
       </h1>
@@ -232,113 +259,145 @@
 
     <!-- THIS IS THE FOOTER AREA -->
 
-    <footer class="bg-[#372549] px-4 py-7 mt-9 lg:mt-[7rem] lg:px-24 lg:py-10">
+    <footer
+      class="bg-[#372549] px-4 py-7 mt-9 md:mt-[5rem] md:px-20 md:py-9 2xl:mt-[7rem] 2xl:px-24 2xl:py-10"
+    >
       <!-- UPPER DIV -->
-      <div class="text-white lg:flex lg:justify-between">
+      <div class="text-white md:flex md:justify-between">
         <div>
           <a href="index.html"
             ><img
               src="./images/footer-logo.png"
-              class="h-[3rem] w-[10rem] lg:h-[5rem] lg:w-[17rem]"
+              class="h-[3rem] w-[10rem] md:h-[4rem] md:w-[15rem] 2xl:h-[5rem] 2xl:w-[17rem]"
           /></a>
 
           <p
-            class="cursor-default text-[12px] mt-3 lg:mt-0 lg:text-[1.25rem] md:text-base lg:text-base italic tracking-widest lg:py-4"
+            class="cursor-default text-[12px] mt-3 md:text-[1.1rem] 2xl:mt-0 2xl:text-[1.25rem] italic tracking-widest md:py-4"
           >
             A home for the voiceless...
           </p>
 
-          <div class="flex items-center gap-3 mt-2 lg:flex lg:gap-4 lg:my-4">
+          <div class="flex items-center gap-3 mt-2 md:gap-4 md:my-4">
             <a href="https://web.facebook.com/?_rdc=1&_rdr"
-              ><img src="./images/fbk.png" class="h-8 lg:h-10 cursor-pointer"
+              ><img src="./images/fbk.png" class="h-8 md:h-10 cursor-pointer"
             /></a>
 
             <a href="https://www.instagram.com/moongoddessherself/"
               ><img
                 src="./images/IG.png"
-                class="h-8 lg:h-10 border-black cursor-pointer"
+                class="h-8 md:h-10 border-black cursor-pointer"
             /></a>
             <a href="https://twitter.com/girle_45"
-              ><img src="./images/Xapp.png" class="h-8 lg:h-10 cursor-pointer"
+              ><img src="./images/Xapp.png" class="h-8 md:h-10 cursor-pointer"
             /></a>
           </div>
         </div>
 
-        <div class="lg:hidden mt-5">
+        <div class="md:hidden mt-5">
           <p class="text-[14px] text-white">Address:</p>
-          <p
-            class="lg:hidden cursor-default text-[#a9a8a8] text-[12px] w-[20rem] lg:w-[26rem] lg:text-base"
-          >
+          <p class="cursor-default text-[#a9a8a8] text-[12px] w-[20rem]">
             City of Refuge: No 14, Station Road, Along Royalton Hotel, GRA,
             Ilorin, Kwara State.
           </p>
         </div>
 
-        <div class="lg:flex lg:gap-20">
+        <div class="md:flex md:gap-20">
           <div class="text-[14px]">
-            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] lg:pb-3">About</h2>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+            <h2 class="mt-3 md:mt-0 md:text-[1.5rem] 2xl:text-[2rem] md:pb-3">
+              About
+            </h2>
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
               Resources
             </p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
               Volunteers
             </p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
               Business Model
             </p>
           </div>
 
           <div class="text-[14px]">
-            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] lg:pb-3">Contact</h2>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-pointer">
-              <a
-                href="tel:+2349063174221"
-                style="color: inherit; text-decoration: none"
+            <h2 class="mt-3 md:mt-0 md:text-[1.5rem] 2xl:text-[2rem] md:pb-3">
+              Contact
+            </h2>
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-pointer"
+            >
+              <a href="tel:+2349063174221" class="text-current"
                 >+2349063174221</a
               >
             </p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-pointer">
-              <a
-                href="tel:+2349063174221"
-                style="color: inherit; text-decoration: none"
+
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-pointer"
+            >
+              <a href="tel:+2349063174221" class="text-current"
                 >+2349063174221</a
               >
             </p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-pointer">
-              <a
-                href="tel:+2349063174221"
-                style="color: inherit; text-decoration: none"
+
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-pointer"
+            >
+              <a href="tel:+2349063174221" class="text-current"
                 >+2349063174221</a
               >
             </p>
           </div>
 
           <div class="text-[14px]">
-            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] lg:pb-3">Support</h2>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+            <h2 class="mt-3 md:mt-0 md:text-[1.5rem] 2xl:text-[2rem] md:pb-3">
+              Support
+            </h2>
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
               Help Center
             </p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">NGO</p>
-            <p class="text-[#a9a8a8] lg:text-[1.25rem] cursor-default">
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
+              NGO
+            </p>
+            <p
+              class="text-[#a9a8a8] md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default"
+            >
               Partnership
             </p>
           </div>
 
           <div class="text-[14px] text-[#a9a8a8]">
-            <h2 class="mt-3 lg:mt-0 lg:text-[2rem] text-white lg:pb-3">News</h2>
-            <p class="lg:text-[1.25rem] cursor-default"><a href="#news">Vlogs</a></p>
-            <p class="lg:text-[1.25rem] cursor-default"><a href="#news">Blogs</a></p>
-            <p class="lg:text-[1.25rem] cursor-default"><a href="#news">Events</a></p>
+            <h2
+              class="mt-3 md:mt-0 md:text-[1.5rem] 2xl:text-[2rem] md:pb-3 text-white"
+            >
+              News
+            </h2>
+            <p class="md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default">
+              <a href="#news">Vlogs</a>
+            </p>
+            <p class="md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default">
+              <a href="#news">Blogs</a>
+            </p>
+            <p class="md:text-[1.1rem] 2xl:text-[1.25rem] cursor-default">
+              <a href="#news">Events</a>
+            </p>
           </div>
         </div>
       </div>
 
       <!-- LOWER DIV -->
-      <div class="lg:flex lg:items-center lg:justify-between">
-        <div class="lg:mt-4 hidden lg:block">
-          <p class="lg:text-[1.5rem] lg:font-semibold text-white">Address:</p>
+      <div class="hidden md:flex md:items-center md:justify-between">
+        <div class="md:mt-4">
+          <p class="2xl:text-[2rem] md:text-[1.5rem] text-white">Address:</p>
           <p
-            class="cursor-default text-[#a9a8a8] text-[1.25rem] w-[20rem] lg:w-[26rem] lg:text-base"
+            class="cursor-default text-[#a9a8a8] 2xl:text-[1.5rem] md:text-[1.1rem] w-[23rem] 2xl:w-[26rem]"
           >
             City of Refuge: No 14, Station Road, Along Royalton Hotel, GRA,
             Ilorin, Kwara State.
@@ -349,13 +408,17 @@
 
     <!-- COPYRIGHT DIV -->
     <div
-      class="text-[0.6rem] py-1 lg:text-[0.9rem] lg:py-2 text-black text-center lg:text-left"
+      class="text-[0.6rem] py-1 md:text-[0.8rem] 2xl:text-[0.9rem] 2xl:py-2 text-black text-center 2xl:text-left"
     >
       <p class="text-center">© 2024 Secure Her Abound. All-Rights Reserved.</p>
     </div>
 
-    <script src="https://js.paystack.co/v1/inline.js"></script>
-    <script src="payment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="app.js"></script>
+    <script src="contactform.js"></script>
   </body>
 </html>
